@@ -92,3 +92,12 @@ footer {
   margin-top: 3em;
   font-size: 0.8em;
 }
+
+.spirits-category h2, 
+.spirits-category h3 {
+  color: gold;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 1em;
+}
