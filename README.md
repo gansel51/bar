@@ -1,6 +1,6 @@
-# The Drunk Griffin - Cocktail Menu
+# The Tipsy Griffin - Cocktail Menu
 
-Welcome to **The Drunk Griffin**, a curated collection of cocktail recipes, spirits, and bar menus. This repository contains the source code for a web-based cocktail menu, showcasing classic cocktails, seasonal creations, spirits lists, and homebrewing recipes.
+Welcome to **The Tipsy Griffin**, a curated collection of cocktail recipes, spirits, and bar menus. This repository contains the source code for a web-based cocktail menu, showcasing classic cocktails, seasonal creations, spirits lists, and homebrewing recipes.
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@ Welcome to **The Drunk Griffin**, a curated collection of cocktail recipes, spir
 
 ## Overview
 
-The Drunk Griffin is designed to provide a digital menu for visits to Griffin's Apartment.
+The Tipsy Griffin is designed to provide a digital menu for visits to Griffin's Apartment.
 
 ## Features
 
