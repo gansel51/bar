@@ -1,0 +1,94 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
+
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #f5f5dc;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #000;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: #f5f5dc;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+main {
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 0.5em 0;
+  font-size: 1.2em;
+}
+
+section.cocktail-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+
+div.cocktail {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  padding: 1.5em;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+}
+
+div.cocktail h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: gold;
+}
+
+div.cocktail p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+span.icon {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 1.8em;
+}
+
+footer {
+  background-color: #000;
+  color: #f5f5dc;
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+  font-size: 0.8em;
+}
