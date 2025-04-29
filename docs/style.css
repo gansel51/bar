@@ -101,3 +101,15 @@ footer {
   text-decoration: underline;
   margin-top: 1em;
 }
+
+.hero-logo {
+  display: block;
+  max-width: 500px;
+  margin: 1em auto;
+}
+
+.seal-logo {
+  display: block;
+  max-width: 120px;
+  margin: 1em auto;
+}
