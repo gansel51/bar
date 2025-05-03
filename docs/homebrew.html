@@ -26,13 +26,15 @@
       <h1>Chelsea Court Brewing Co.</h1>
       
       <section class="intro-section">
-        <p>Welcome to our homebrewing operation! Each batch is carefully crafted in 5 gallon batches right here in Chelsea, Manhattan. We're passionate about creating flavorful beers that showcase both traditional brewing techniques and creative experimentation.</p>
+        <p>Welcome to our homebrewing operation! Each beer is carefully brewed in Manhattan in small batches with just 50 bottles produced.</p>
       </section>
       <br>
       
       <section id="current-brews" class="brew-section">
         <h2>Batches</h2>
         <div class="cocktail-list">
+
+          <!-- Brews -->
           <div class="cocktail">
             <span class="icon">🍺</span>
             <h2>Batch 2: Kama Citra IPA</h2>
@@ -50,12 +52,12 @@
                 <div class="label">Main Hop</div>
               </div>
               <div class="brew-stat">
-                <div class="value">Session</div>
+                <div class="value">IPA</div>
                 <div class="label">Style</div>
               </div>
             </div>
             <p>
-              A flirtatious fusion of American Pale Ale and West Coast IPA, Kama Citra is the session IPA that knows how to keep things interesting. Bold Citra hops take the lead, mingling with the classic Cascade and Centennial for a tropical, citrusy punch that dances across your palate. But it's not all about hops—Kama Citra balances that bite with a smooth, soft malt backbone, making it effortlessly drinkable. Full of flavor but light on the ABV, this is the IPA that invites you to have another round. No restraint required.
+              A flirtatious fusion of American Pale Ale and West Coast IPA, Kama Citra is the session IPA that knows how to keep things interesting. Bold Citra hops take the lead, mingling with the classic Cascade and Centennial for a tropical, citrusy punch that dances across your palate.
             </p>
             <br>
             <p>Flavor notes:</p>
@@ -67,13 +69,13 @@
             </div>
             <button class="btn btn-small brew-details" data-brew="kama-citra">View Details</button>
           </div>
-
+          
           <div class="cocktail">
             <span class="icon">🍺</span>
             <h2>Batch 1: Halloween Hefe</h2>
             <div class="brew-stats">
               <div class="brew-stat">
-                <div class="value">5.2%</div>
+                <div class="value">4.5%</div>
                 <div class="label">ABV</div>
               </div>
               <div class="brew-stat">
@@ -90,7 +92,7 @@
               </div>
             </div>
             <p>
-              Take a sip and you're transported straight to a Bavarian Bier Hall. This medium-bodied, effervescent ale is a tribute to tradition—rich with yeasty, wheat malt character and a smooth mouthfeel. It's like drinking liquid bread, but with a lively, zesty twist. Expect a dense, creamy head and a cloudy pour that delivers all the malty goodness. Serve it right with a swirl to capture the yeast, and you've got a perfect pint of Bavaria's finest. Cheers, mit hefe!
+              [Out of Stock] Take a sip and you're transported straight to a Bavarian Bier Hall. This medium-bodied hefe is a tribute to tradition—rich with yeasty, wheat malt character and a smooth mouthfeel.
             </p>
             <br>
             <p>Flavor notes:</p>
@@ -102,6 +104,8 @@
             </div>
             <button class="btn btn-small brew-details" data-brew="halloween-hefe">View Details</button>
           </div>
+
+          <!-- Brews -->
         </div>
       </section>
     </div>
@@ -142,80 +146,68 @@
       const closeModal = document.getElementById('close-brew-modal');
       const modalContent = document.getElementById('brew-modal-content');
       
-      // Brew data (in real implementation, this could be loaded from a JSON file)
-      const brews = {
-        'kama-citra': {
-          name: 'Kama Citra IPA',
-          batch: 'Batch 2',
-          stats: {
-            abv: '5.8%',
-            ibu: '45',
-            og: '1.056',
-            fg: '1.010',
-            srm: '6'
-          },
-          ingredients: [
-            'Pale Malt',
-            'Vienna Malt',
-            'CaraPils',
-            'Citra Hops',
-            'Cascade Hops',
-            'Centennial Hops',
-            'American Ale Yeast'
-          ],
-          process: [
-            'Mashed at 152°F for 60 minutes',
-            'Boiled for 60 minutes with hop additions at 60, 15, 5, and 0 minutes',
-            'Dry-hopped with Citra and Cascade for 9 days',
-            'Fermented at 74°F',
-            'Bottle conditioned for 2 weeks'
-          ],
-          description: 'A flirtatious fusion of American Pale Ale and West Coast IPA, Kama Citra is the session IPA that knows how to keep things interesting. Bold Citra hops take the lead, mingling with the classic Cascade and Centennial for a tropical, citrusy punch that dances across your palate.',
-          pairings: [
-            'Spicy Thai food',
-            'Grilled salmon',
-            'Sharp cheddar cheese',
-            'Citrus desserts'
-          ]
-        },
-        'halloween-hefe': {
-          name: 'Halloween Hefe',
-          batch: 'Batch 1',
-          stats: {
-            abv: '5.2%',
-            ibu: '12',
-            og: '1.050',
-            fg: '1.012',
-            srm: '4'
-          },
-          ingredients: [
-            'German Wheat Malt (60%)',
-            'German Pilsner Malt (40%)',
-            'Hefeweizen Yeast'
-          ],
-          process: [
-            'Mashed at 152°F for 60 minutes',
-            'Boiled for 60 minutes with hop additions at 60 and 15 minutes',
-            'Fermented at 68°F',
-            'Bottle conditioned for 2 weeks'
-          ],
-          description: 'Take a sip and you\'re transported straight to a Bavarian Bier Hall. This medium-bodied, effervescent ale is a tribute to tradition—rich with yeasty, wheat malt character and a smooth mouthfeel.',
-          pairings: [
-            'German sausages',
-            'Soft pretzels with mustard',
-            'Grilled chicken',
-            'Creamy cheeses'
-          ]
-        }
-      };
+      // Load brews data from JSON file
+      let brews = {};
+      fetch('brews.json')
+        .then(response => response.json())
+        .then(data => {
+          brews = data;
+          console.log('Brews data loaded successfully');
+        })
+        .catch(error => {
+          console.error('Error loading brews data:', error);
+          // Fallback in case the JSON file fails to load
+          brews = {
+            'brew-not-found': {
+              name: 'Brew Not Found',
+              batch: 'Unknown',
+              stats: {
+                abv: 'N/A',
+                ibu: 'N/A',
+                og: 'N/A',
+                fg: 'N/A',
+              },
+              ingredients: ['Unable to load brew data'],
+              process: ['Please try again later'],
+              description: 'We\'re having trouble accessing our brew database.',
+              pairings: ['Check back later']
+            }
+          };
+        });
       
       // Open modal with brew details
       brewButtons.forEach(button => {
         button.addEventListener('click', () => {
           const brewId = button.getAttribute('data-brew');
-          const brew = brews[brewId];
           
-          if (brew) {
+          // Show loading indicator first
+          modalContent.innerHTML = `
+            <div class="loading">
+              <div class="loading-spinner"></div>
+              <p>Loading brew details...</p>
+            </div>
+          `;
+          
+          // Show modal right away with loading spinner
+          modal.classList.add('active');
+          
+          // Wait a moment to ensure JSON is loaded
+          setTimeout(() => {
+            const brew = brews[brewId] || {
+              name: 'Brew Details Coming Soon',
+              batch: 'Unknown',
+              stats: {
+                abv: 'TBD',
+                ibu: 'TBD',
+                og: 'TBD',
+                fg: 'TBD',
+              },
+              ingredients: ['Check back later for the complete recipe!'],
+              process: ['This brew process is currently being documented.'],
+              description: 'We\'re still fine-tuning this delicious brew. Check back soon!',
+              pairings: ['Works well with most foods']
+            };
+            
             // Populate modal content
             modalContent.innerHTML = `
               <h2>${brew.name}</h2>
@@ -238,10 +230,6 @@
                   <div class="value">${brew.stats.fg}</div>
                   <div class="label">FG</div>
                 </div>
-                <div class="brew-stat">
-                  <div class="value">${brew.stats.srm}</div>
-                  <div class="label">SRM</div>
-                </div>
               </div>
               
               <div class="brew-description">
@@ -250,29 +238,26 @@
               
               <div class="brew-details-section">
                 <h3>Ingredients:</h3>
-                <ul>
+                <ul class="bullet-list">
                   ${brew.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
                 </ul>
               </div>
               
               <div class="brew-details-section">
                 <h3>Process:</h3>
-                <ol>
+                <ol class="instructions-list">
                   ${brew.process.map(step => `<li>${step}</li>`).join('')}
                 </ol>
               </div>
               
               <div class="brew-details-section">
                 <h3>Food Pairings:</h3>
-                <ul>
+                <ul class="bullet-list">
                   ${brew.pairings.map(pairing => `<li>${pairing}</li>`).join('')}
                 </ul>
               </div>
             `;
-            
-            // Show modal
-            modal.classList.add('active');
-          }
+          }, 300);
         });
       });
       

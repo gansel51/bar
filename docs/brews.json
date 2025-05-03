@@ -1,0 +1,81 @@
+{
+  "kama-citra": {
+    "name": "Kama Citra IPA",
+    "batch": "Batch 2",
+    "stats": {
+      "abv": "5.8%",
+      "ibu": "45",
+      "og": "1.056",
+      "fg": "1.010",
+      "srm": "6"
+    },
+    "ingredients": [
+      "Valencia Grains",
+      "Caramel 40",
+      "Citra Hops",
+      "Gold Malt",
+      "Cascade Hops",
+      "Centennial Hops",
+      "American Ale Yeast"
+    ],
+    "process": [
+      "Mashed at 152\u00b0F for 60 minutes",
+      "Boiled for 60 minutes with hop additions at 60, 15, 5, and 0 minutes",
+      "Dry-hopped with Citra and Cascade for 9 days",
+      "Fermented at 74\u00b0F",
+      "Bottle conditioned for 2 weeks"
+    ],
+    "description": "A flirtatious fusion of American Pale Ale and West Coast IPA, Kama Citra is the session IPA that knows how to keep things interesting. Bold Citra hops take the lead, mingling with the classic Cascade and Centennial for a tropical, citrusy punch that dances across your palate.",
+    "pairings": [
+      "Spicy Thai food",
+      "Grilled salmon",
+      "Sharp cheddar cheese",
+      "Citrus desserts"
+    ],
+    "flavor_tags": [
+      "Tropical",
+      "Citrus",
+      "Balanced",
+      "Smooth"
+    ],
+    "main_hop": "Citra",
+    "style": "IPA"
+  },
+  "halloween-hefe": {
+    "name": "Halloween Hefe",
+    "batch": "Batch 1",
+    "stats": {
+      "abv": "4.5%",
+      "ibu": "12",
+      "og": "1.040",
+      "fg": "1.015",
+      "srm": "4"
+    },
+    "ingredients": [
+      "German Wheat Malt (60%)",
+      "German Pilsner Malt (40%)",
+      "Hefeweizen Yeast"
+    ],
+    "process": [
+      "Mashed at 152\u00b0F for 60 minutes",
+      "Boiled for 60 minutes with hop additions at 60 and 15 minutes",
+      "Fermented at 68\u00b0F",
+      "Bottle conditioned for 2 weeks"
+    ],
+    "description": "[Out of Stock] Take a sip and you're transported straight to a Bavarian Bier Hall. This medium-bodied hefe is a tribute to tradition\u2014rich with yeasty, wheat malt character and a smooth mouthfeel.",
+    "pairings": [
+      "German sausages",
+      "Soft pretzels with mustard",
+      "Grilled chicken",
+      "Creamy cheeses"
+    ],
+    "flavor_tags": [
+      "Banana",
+      "Clove",
+      "Wheat",
+      "Creamy"
+    ],
+    "main_grain": "Wheat",
+    "style": "Hefeweizen"
+  }
+}
