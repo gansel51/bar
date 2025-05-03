@@ -8,7 +8,7 @@
   --header-bg: #000;
   --text-color: #f5f5dc;
   --accent-color: #c9a227;
-  --gold: gold;
+  --gold: gold; /* Make sure this is present */
   --border-color: #333;
   --transition-speed: 0.3s;
 }
@@ -195,6 +195,14 @@ div.cocktail:hover span.icon {
   position: relative;
 }
 
+.spirits-category h2 {
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .beverage-item {
   width: 100%;
   min-width: 100%;
@@ -207,6 +215,8 @@ div.cocktail:hover span.icon {
   font-size: 1.3em;
   margin-left: 0;
   position: relative;
+  color: var(--gold); /* Add gold color to subcategory headings */
+  padding-bottom: 0.25rem;
 }
 
 .beverage-item ul {
@@ -218,10 +228,12 @@ div.cocktail:hover span.icon {
   display: block;
   width: 100%;
   white-space: normal;
+  word-wrap: break-word;
   text-align: left;
   padding: 0.5rem 0;
   position: relative;
   margin-left: 1.5rem;
+  box-sizing: border-box;
 }
 
 /* Prevent shift when filtering */
@@ -229,6 +241,14 @@ section.spirits-category,
 section.beer-category {
   display: block !important;
   min-width: 100%;
+}
+
+section.beer-category h2 {
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Use CSS Grid to prevent wrapping and maintain fixed width */
@@ -294,10 +314,18 @@ footer {
   font-family: 'Open Sans', sans-serif;
 }
 
-.filter-btn:hover,
+.filter-btn:hover {
+  background-color: var(--gold);
+  color: var(--main-bg);
+}
+
 .filter-btn.active {
   background-color: var(--accent-color);
   color: var(--main-bg);
+}
+
+.filter-btn.active:hover {
+  background-color: var(--gold);
 }
 
 /* Search Bar - fixed size */
@@ -410,8 +438,21 @@ footer {
 /* Container */
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
+  min-width: 1000px; /* Set a minimum width to prevent shrinking */
+  overflow-x: auto; /* Allow horizontal scrolling if needed on very small screens */
+  box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    min-width: 90%; /* On smaller screens, use percentage but still maintain width */
+  }
+}
+
+.container > * {
   width: 100%;
 }
 
@@ -475,6 +516,10 @@ footer {
   position: relative;
   transform: translateY(20px);
   transition: all var(--transition-speed) ease;
+}
+
+.modal-content h2 {
+  color: var(--accent-color);
 }
 
 .modal-overlay.active .modal-content {
@@ -687,7 +732,7 @@ footer {
 
 .stat-card i {
   font-size: 2.5rem;
-  color: var(--accent-color);
+  color: var(--gold); /* Change from accent-color to gold */
   margin-bottom: 1rem;
 }
 
@@ -696,7 +741,7 @@ footer {
   font-size: 2.75rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: white;
+  color: var(--gold); /* Change from white to gold */
   line-height: 1;
 }
 
@@ -772,6 +817,10 @@ footer {
 
 .recipe-details {
   margin-top: 1rem;
+}
+
+.recipe-details h3 {
+  color: var(--gold);
 }
 
 /* Ingredients bullets styling */
