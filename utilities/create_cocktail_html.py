@@ -99,7 +99,7 @@ def generate_cocktail_html(cocktail_name):
           <div class="cocktail-details">
             <div class="ingredients">
               <h3>Ingredients:</h3>
-              <ul>
+              <ul class="bullet-list">
                 {ingredients_html}
               </ul>
             </div>
@@ -107,7 +107,6 @@ def generate_cocktail_html(cocktail_name):
               <p>{description}</p>
             </div>
           </div>
-          <br>
           <div class="cocktail-footer">
             <button class="btn btn-small view-recipe" data-cocktail="{cocktail_name}">Full Recipe</button>
           </div>

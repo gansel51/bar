@@ -187,30 +187,57 @@ div.cocktail:hover span.icon {
 }
 
 /* Spirit Categories */
-.spirits-category h2,
-.spirits-category h3 {
-  color: var(--accent-color);
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
+.spirits-category {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  margin-bottom: 2rem;
   position: relative;
-  padding-bottom: 0.3em;
-  margin-top: 1.5em;
 }
 
-.spirits-category h2::after,
-.spirits-category h3::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
+.beverage-item {
+  width: 100%;
+  min-width: 100%;
+  margin-bottom: 1.5rem;
+  position: relative;
   left: 0;
-  width: 60px;
-  height: 2px;
-  background-color: var(--accent-color);
 }
 
-.spirits-category h3 {
+.beverage-item h3 {
   font-size: 1.3em;
-  margin-left: 1em;
+  margin-left: 0;
+  position: relative;
+}
+
+.beverage-item ul {
+  display: block;
+  width: 100%;
+}
+
+.beverage-item ul li {
+  display: block;
+  width: 100%;
+  white-space: normal;
+  text-align: left;
+  padding: 0.5rem 0;
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+/* Prevent shift when filtering */
+section.spirits-category, 
+section.beer-category {
+  display: block !important;
+  min-width: 100%;
+}
+
+/* Use CSS Grid to prevent wrapping and maintain fixed width */
+@media (min-width: 768px) {
+  .beverage-item ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
 }
 
 /* Logos */
@@ -385,6 +412,7 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  width: 100%;
 }
 
 /* Homebrew Specific */
