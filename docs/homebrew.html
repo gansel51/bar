@@ -4,11 +4,12 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Homebrewing</title>
+  <title>Homebrewing - The Tipsy Griffin</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </head>
 <body>
-  <header>
+  <header id="main-header">
     <img src="images/logo-seal.png" alt="The Tipsy Griffin" class="seal-logo">
     <nav>
       <a href="index.html">Bar Menu</a> 
@@ -16,35 +17,292 @@
       <a href="classics.html">Classic Cocktails</a>
       <a href="seasonal.html">Seasonal Cocktails</a>
       <a href="spirits.html">Spirits List</a>
-      <a href="homebrew.html">Homebrewing</a>
+      <a href="homebrew.html" class="active">Homebrewing</a>
     </nav>
   </header>
 
   <main>
-    <h1>Chelsea Court Brewing Co.</h1>
-    <section class="cocktail-list">
-      </div>
+    <div class="container">
+      <h1>Chelsea Court Brewing Co.</h1>
+      
+      <section class="intro-section">
+        <p>Welcome to our homebrewing operation! Each batch is carefully crafted in 5 gallon batches right here in Chelsea, Manhattan. We're passionate about creating flavorful beers that showcase both traditional brewing techniques and creative experimentation.</p>
+      </section>
+      <br>
+      
+      <section id="current-brews" class="brew-section">
+        <h2>Batches</h2>
+        <div class="cocktail-list">
+          <div class="cocktail">
+            <span class="icon">🍺</span>
+            <h2>Batch 2: Kama Citra IPA</h2>
+            <div class="brew-stats">
+              <div class="brew-stat">
+                <div class="value">5.8%</div>
+                <div class="label">ABV</div>
+              </div>
+              <div class="brew-stat">
+                <div class="value">45</div>
+                <div class="label">IBU</div>
+              </div>
+              <div class="brew-stat">
+                <div class="value">Citra</div>
+                <div class="label">Main Hop</div>
+              </div>
+              <div class="brew-stat">
+                <div class="value">Session</div>
+                <div class="label">Style</div>
+              </div>
+            </div>
+            <p>
+              A flirtatious fusion of American Pale Ale and West Coast IPA, Kama Citra is the session IPA that knows how to keep things interesting. Bold Citra hops take the lead, mingling with the classic Cascade and Centennial for a tropical, citrusy punch that dances across your palate. But it's not all about hops—Kama Citra balances that bite with a smooth, soft malt backbone, making it effortlessly drinkable. Full of flavor but light on the ABV, this is the IPA that invites you to have another round. No restraint required.
+            </p>
+            <br>
+            <p>Flavor notes:</p>
+            <div class="flavor-profile">
+              <span class="flavor-tag">Tropical</span>
+              <span class="flavor-tag">Citrus</span>
+              <span class="flavor-tag">Balanced</span>
+              <span class="flavor-tag">Smooth</span>
+            </div>
+            <button class="btn btn-small brew-details" data-brew="kama-citra">View Details</button>
+          </div>
 
-      <div class="cocktail">
-        <span class="icon">🍺</span>
-        <h2>Batch 2: Kama Citra IPA</h2>
-        <p>
-            A flirtatious fusion of American Pale Ale and West Coast IPA, Kama Citra is the session IPA that knows how to keep things interesting. Bold Citra hops take the lead, mingling with the classic Cascade and Centennial for a tropical, citrusy punch that dances across your palate. But it’s not all about hops—Kama Citra balances that bite with a smooth, soft malt backbone, making it effortlessly drinkable. Full of flavor but light on the ABV, this is the IPA that invites you to have another round. No restraint required.
-        </p>
-      </div>
-
-      <div class="cocktail">
-        <span class="icon">🍺</span>
-        <h2>Batch 1: Halloween Hefe</h2>
-        <p>
-            Take a sip and you’re transported straight to a Bavarian Bier Hall. This medium-bodied, effervescent ale is a tribute to tradition—rich with yeasty, wheat malt character and a smooth mouthfeel. It’s like drinking liquid bread, but with a lively, zesty twist. Expect a dense, creamy head and a cloudy pour that delivers all the malty goodness. Serve it right with a swirl to capture the yeast, and you’ve got a perfect pint of Bavaria’s finest. Cheers, mit hefe!        </p>
-      </div>
-
-    </section>
+          <div class="cocktail">
+            <span class="icon">🍺</span>
+            <h2>Batch 1: Halloween Hefe</h2>
+            <div class="brew-stats">
+              <div class="brew-stat">
+                <div class="value">5.2%</div>
+                <div class="label">ABV</div>
+              </div>
+              <div class="brew-stat">
+                <div class="value">12</div>
+                <div class="label">IBU</div>
+              </div>
+              <div class="brew-stat">
+                <div class="value">Wheat</div>
+                <div class="label">Main Grain</div>
+              </div>
+              <div class="brew-stat">
+                <div class="value">Hefeweizen</div>
+                <div class="label">Style</div>
+              </div>
+            </div>
+            <p>
+              Take a sip and you're transported straight to a Bavarian Bier Hall. This medium-bodied, effervescent ale is a tribute to tradition—rich with yeasty, wheat malt character and a smooth mouthfeel. It's like drinking liquid bread, but with a lively, zesty twist. Expect a dense, creamy head and a cloudy pour that delivers all the malty goodness. Serve it right with a swirl to capture the yeast, and you've got a perfect pint of Bavaria's finest. Cheers, mit hefe!
+            </p>
+            <br>
+            <p>Flavor notes:</p>
+            <div class="flavor-profile">
+              <span class="flavor-tag">Banana</span>
+              <span class="flavor-tag">Clove</span>
+              <span class="flavor-tag">Wheat</span>
+              <span class="flavor-tag">Creamy</span>
+            </div>
+            <button class="btn btn-small brew-details" data-brew="halloween-hefe">View Details</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
+  <!-- Brew Details Modal -->
+  <div class="modal-overlay" id="brew-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-brew-modal">&times;</button>
+      <div id="brew-modal-content"></div>
+    </div>
+  </div>
+
   <footer>
-    &copy; 2025 Griffin Ansel
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Griffin Ansel | The Tipsy Griffin</p>
+        <p class="disclaimer">Please drink responsibly.</p>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Brew details modal functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const brewButtons = document.querySelectorAll('.brew-details');
+      const modal = document.getElementById('brew-modal');
+      const closeModal = document.getElementById('close-brew-modal');
+      const modalContent = document.getElementById('brew-modal-content');
+      
+      // Brew data (in real implementation, this could be loaded from a JSON file)
+      const brews = {
+        'kama-citra': {
+          name: 'Kama Citra IPA',
+          batch: 'Batch 2',
+          stats: {
+            abv: '5.8%',
+            ibu: '45',
+            og: '1.056',
+            fg: '1.010',
+            srm: '6'
+          },
+          ingredients: [
+            'Pale Malt',
+            'Vienna Malt',
+            'CaraPils',
+            'Citra Hops',
+            'Cascade Hops',
+            'Centennial Hops',
+            'American Ale Yeast'
+          ],
+          process: [
+            'Mashed at 152°F for 60 minutes',
+            'Boiled for 60 minutes with hop additions at 60, 15, 5, and 0 minutes',
+            'Dry-hopped with Citra and Cascade for 9 days',
+            'Fermented at 74°F',
+            'Bottle conditioned for 2 weeks'
+          ],
+          description: 'A flirtatious fusion of American Pale Ale and West Coast IPA, Kama Citra is the session IPA that knows how to keep things interesting. Bold Citra hops take the lead, mingling with the classic Cascade and Centennial for a tropical, citrusy punch that dances across your palate.',
+          pairings: [
+            'Spicy Thai food',
+            'Grilled salmon',
+            'Sharp cheddar cheese',
+            'Citrus desserts'
+          ]
+        },
+        'halloween-hefe': {
+          name: 'Halloween Hefe',
+          batch: 'Batch 1',
+          stats: {
+            abv: '5.2%',
+            ibu: '12',
+            og: '1.050',
+            fg: '1.012',
+            srm: '4'
+          },
+          ingredients: [
+            'German Wheat Malt (60%)',
+            'German Pilsner Malt (40%)',
+            'Hefeweizen Yeast'
+          ],
+          process: [
+            'Mashed at 152°F for 60 minutes',
+            'Boiled for 60 minutes with hop additions at 60 and 15 minutes',
+            'Fermented at 68°F',
+            'Bottle conditioned for 2 weeks'
+          ],
+          description: 'Take a sip and you\'re transported straight to a Bavarian Bier Hall. This medium-bodied, effervescent ale is a tribute to tradition—rich with yeasty, wheat malt character and a smooth mouthfeel.',
+          pairings: [
+            'German sausages',
+            'Soft pretzels with mustard',
+            'Grilled chicken',
+            'Creamy cheeses'
+          ]
+        }
+      };
+      
+      // Open modal with brew details
+      brewButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const brewId = button.getAttribute('data-brew');
+          const brew = brews[brewId];
+          
+          if (brew) {
+            // Populate modal content
+            modalContent.innerHTML = `
+              <h2>${brew.name}</h2>
+              <p class="brew-batch">${brew.batch}</p>
+              
+              <div class="brew-modal-stats">
+                <div class="brew-stat">
+                  <div class="value">${brew.stats.abv}</div>
+                  <div class="label">ABV</div>
+                </div>
+                <div class="brew-stat">
+                  <div class="value">${brew.stats.ibu}</div>
+                  <div class="label">IBU</div>
+                </div>
+                <div class="brew-stat">
+                  <div class="value">${brew.stats.og}</div>
+                  <div class="label">OG</div>
+                </div>
+                <div class="brew-stat">
+                  <div class="value">${brew.stats.fg}</div>
+                  <div class="label">FG</div>
+                </div>
+                <div class="brew-stat">
+                  <div class="value">${brew.stats.srm}</div>
+                  <div class="label">SRM</div>
+                </div>
+              </div>
+              
+              <div class="brew-description">
+                <p>${brew.description}</p>
+              </div>
+              
+              <div class="brew-details-section">
+                <h3>Ingredients:</h3>
+                <ul>
+                  ${brew.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                </ul>
+              </div>
+              
+              <div class="brew-details-section">
+                <h3>Process:</h3>
+                <ol>
+                  ${brew.process.map(step => `<li>${step}</li>`).join('')}
+                </ol>
+              </div>
+              
+              <div class="brew-details-section">
+                <h3>Food Pairings:</h3>
+                <ul>
+                  ${brew.pairings.map(pairing => `<li>${pairing}</li>`).join('')}
+                </ul>
+              </div>
+            `;
+            
+            // Show modal
+            modal.classList.add('active');
+          }
+        });
+      });
+      
+      // Close modal
+      closeModal.addEventListener('click', () => {
+        modal.classList.remove('active');
+      });
+      
+      // Close modal when clicking outside content
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('active');
+        }
+      });
+      
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 100,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

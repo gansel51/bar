@@ -2,34 +2,128 @@
 <html lang="en">
 <head>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home Bar</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Tipsy Griffin - Premium Home Bar Experience</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="images/logo-horizontal.png" alt="The Tipsy Griffin" class="hero-logo" />
-      <nav>
-        <a href="index.html">Bar Menu</a> 
-        <a href="beer.html">Beer and Wine</a>
-        <a href="classics.html">Classic Cocktails</a>
-        <a href="seasonal.html">Seasonal Cocktails</a>
-        <a href="spirits.html">Spirits List</a>
-        <a href="homebrew.html">Homebrewing</a>
-      </nav>
-    </header>
+  <header id="main-header">
+    <img src="images/logo-seal.png" alt="The Tipsy Griffin" class="seal-logo">
+    <nav>
+      <a href="index.html">Bar Menu</a> 
+      <a href="beer.html">Beer and Wine</a>
+      <a href="classics.html">Classic Cocktails</a>
+      <a href="seasonal.html">Seasonal Cocktails</a>
+      <a href="spirits.html">Spirits List</a>
+      <a href="homebrew.html">Homebrewing</a>
+    </nav>
+  </header>
 
-    <main>
-      <h1>Welcome to the Tipsy Griffin</h1>
-      <p>My apartment might be small, but NYC bars are expensive. Save some money and drink quality drinks in the comfort of your (friend's) home! My bar is open with various beers, cocktails, and liquors for your drinking pleasure!</p>
-      <p>MillerCoors products not served here.</p>
-    </main>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <img src="images/logo-horizontal.png" alt="The Tipsy Griffin" class="hero-logo" />
+      </div>
+    </section>
 
-    <footer>
-      &copy; 2025 Griffin Ansel
-    </footer>
-  </div>
+    <!-- <section id="featured" class="featured-section">
+      <div class="container">
+        <h2>Featured Drinks</h2>
+        <div class="cocktail-list">
+          <div class="cocktail">
+            <span class="icon">🍸</span>
+            <h2>Smoked Mezcal Sour</h2>
+            <p>Our signature cocktail combines smoky mezcal with tequila, citrus, and a hint of habanero for a perfect balance of smoke and spice.</p>
+            <a href="seasonal.html" class="btn btn-outline btn-small">View Recipe</a>
+          </div>
+          
+          <div class="cocktail">
+            <span class="icon">🥃</span>
+            <h2>Blackberry Whiskey Sour</h2>
+            <p>A sophisticated twist on the classic whiskey sour with muddled blackberries and a sweet Chambord float.</p>
+            <a href="seasonal.html" class="btn btn-outline btn-small">View Recipe</a>
+          </div>
+          
+          <div class="cocktail">
+            <span class="icon">🍺</span>
+            <h2>Kama Citra IPA</h2>
+            <p>Our house-brewed IPA featuring bold Citra hops with tropical notes and a smooth malt backbone.</p>
+            <a href="homebrew.html" class="btn btn-outline btn-small">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>NYC's Premier Home Bar Experience</h2>
+            <p>My apartment might be small, but NYC bars are expensive. Save some money and drink quality drinks in the comfort of your (friend's) home! My bar is open with various beers, cocktails, and liquors for your drinking pleasure!</p>
+            <p>MillerCoors products not served here.</p>
+          </div>
+          
+          <!-- Bar Stats -->
+          <div class="library-stats">
+            <h2>The Collection</h2>
+            <div class="stats-container">
+              <div class="stat-card">
+                <i class="fas fa-glass-whiskey"></i>
+                <span class="stat-number">40+</span>
+                <span class="stat-label">Premium Spirits</span>
+              </div>
+              <div class="stat-card">
+                <i class="fas fa-cocktail"></i>
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Craft Cocktails</span>
+              </div>
+              <div class="stat-card">
+                <i class="fas fa-beer"></i>
+                <span class="stat-number">2</span>
+                <span class="stat-label">Homebrewed Beers</span>
+              </div>
+            </div>
+            <p class="stats-note">Carefully selected spirits, handcrafted cocktail recipes, and small-batch brews</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Griffin Ansel | The Tipsy Griffin</p>
+        <p class="disclaimer">Please drink responsibly.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Add active class to current nav item
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPage = window.location.pathname.split('/').pop();
+      const navLinks = document.querySelectorAll('nav a');
+      
+      navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        if (linkPage === currentPage) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
