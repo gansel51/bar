@@ -4,15 +4,16 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Beer and Wine List</title>
+  <title>Beer and Wine - The Tipsy Griffin</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </head>
 <body>
-  <header>
+  <header id="main-header">
     <img src="images/logo-seal.png" alt="The Tipsy Griffin" class="seal-logo">
     <nav>
       <a href="index.html">Bar Menu</a> 
-      <a href="beer.html">Beer and Wine</a>
+      <a href="beer.html" class="active">Beer and Wine</a>
       <a href="classics.html">Classic Cocktails</a>
       <a href="seasonal.html">Seasonal Cocktails</a>
       <a href="spirits.html">Spirits List</a>
@@ -21,48 +22,149 @@
   </header>
 
   <main>
-    <h1>Beer and Wine List</h1>
+    <div class="container">
+      <h1>Beer and Wine List</h1>
+      
+      <div class="search-bar">
+        <input type="text" class="search-input" id="beverage-search" placeholder="Search beverages...">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="beer">Beer</button>
+        <button class="filter-btn" data-filter="cider">Cider</button>
+        <button class="filter-btn" data-filter="rtd">Ready to Drink</button>
+      </div>
 
-    <section class="spirits-category">
-      <h2>Beer</h2>
-      <h3>Mexican</h3>
-      <ul>
-        <li>Estrella Jalisco</li>
-      </ul>
-      <br>
-      <h3>American Mega Brand</h3>
-      <ul>
-        <li>Kona Big Wave</li>
-      </ul>
-      <br>
-      <h3>American Craft</h3>
-      <ul>
-        <li>Wicked Weed Imerial Perni Haze, Wicked Weed Brewing Co., North Carolina</li>
-        <li>Coastal Love, Wicked Weed Brewing Co., North Carolina</li>
-        <li>Hazy Ripper, Treehouse Brewing Co., Massachusetts</li>
-        <li>Bbbrighttt Citra, Treehouse Brewing Co., Massachusetts</li>
-        <li>Pliny The Younger, Russian River Brewing Co., California</li>
-      </ul>
-      <br>
-      <h2>Cider</h2>
-      <h3>Craft</h3>
-      <ul>
-        <li>Downeast Winter Blend</li>
-      </ul>
-      <br>
-      <h3>Mega Brand</h3>
-      <ul>
-        <li>Angry Orchard Crisp Apple</li>
-      </ul>
-      <br>
-      <h2>Other</h2>
-      <h3>Ready to Drink</h3>
-      <ul>
-        <li>Cutwater Espresso Martini</li>
-      </ul>
-      <br>
+      <section class="spirits-category">
+        <h2>Beer</h2>
+        
+        <div class="beverage-item" data-type="beer mexican">
+          <h3>Mexican</h3>
+          <ul>
+            <li>Estrella Jalisco <span class="beverage-notes">Light Lager, 4.5% ABV</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="beer american megabrand">
+          <h3>American Mega Brand</h3>
+          <ul>
+            <li>Kona Big Wave <span class="beverage-notes">Golden Ale, 4.4% ABV, Hawaii</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="beer american craft">
+          <h3>American Craft</h3>
+          <ul>
+            <li>Wicked Weed Imperial Perni Haze <span class="beverage-notes">Imperial IPA, 8.5% ABV, Wicked Weed Brewing Co., North Carolina</span></li>
+            <li>Coastal Love <span class="beverage-notes">Hazy IPA, 6.3% ABV, Wicked Weed Brewing Co., North Carolina</span></li>
+            <li>Hazy Ripper <span class="beverage-notes">New England IPA, 6.8% ABV, Treehouse Brewing Co., Massachusetts</span></li>
+            <li>Bbbrighttt Citra <span class="beverage-notes">Double IPA, 8.2% ABV, Treehouse Brewing Co., Massachusetts</span></li>
+            <li>Pliny The Younger <span class="beverage-notes">Triple IPA, 10.25% ABV, Russian River Brewing Co., California</span></li>
+          </ul>
+        </div>
+
+        <div class="beverage-item" data-type="beer american craft">
+          <h3>Made in House</h3>
+          <p>Check out our <a href="homebrew.html">Homebrew page</a> to see what's brewing in Chelsea!</p>
+        </div>
+        
+        <h2>Cider</h2>
+        
+        <div class="beverage-item" data-type="cider craft">
+          <h3>Craft</h3>
+          <ul>
+            <li>Downeast Winter Blend <span class="beverage-notes">5.1% ABV, Massachusetts</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="cider megabrand">
+          <h3>Mega Brand</h3>
+          <ul>
+            <li>Angry Orchard Crisp Apple <span class="beverage-notes">5.0% ABV, New York</span></li>
+          </ul>
+        </div>
+        
+        <h2>Ready-to-Drink</h2>
+        
+        <div class="beverage-item" data-type="rtd cocktails">
+          <h3>Cocktails</h3>
+          <ul>
+            <li>Cutwater Espresso Martini <span class="beverage-notes">12.5% ABV, California</span></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
   <footer>
-    &copy; 2025 Griffin Ansel
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Griffin Ansel | The Tipsy Griffin</p>
+        <p class="disclaimer">Please drink responsibly.</p>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const beverages = document.querySelectorAll('.beverage-item');
+      const searchInput = document.getElementById('beverage-search');
+      
+      // Filter buttons click event
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to clicked button
+          button.classList.add('active');
+          
+          const filter = button.getAttribute('data-filter');
+          
+          // Show/hide beverages based on filter
+          beverages.forEach(beverage => {
+            if (filter === 'all') {
+              beverage.style.display = 'block';
+            } else {
+              if (beverage.getAttribute('data-type').includes(filter)) {
+                beverage.style.display = 'block';
+              } else {
+                beverage.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+      
+      // Search functionality
+      searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        
+        beverages.forEach(beverage => {
+          const beverageText = beverage.textContent.toLowerCase();
+          
+          if (beverageText.includes(searchTerm)) {
+            beverage.style.display = 'block';
+          } else {
+            beverage.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

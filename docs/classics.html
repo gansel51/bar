@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Classic Cocktails</title>
+  <title>Classic Cocktails - The Tipsy Griffin</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </head>
+
 <body>
-  <header>
+  <header id="main-header">
     <img src="images/logo-seal.png" alt="The Tipsy Griffin" class="seal-logo">
     <nav>
-      <a href="index.html">Bar Menu</a> 
+      <a href="index.html">Bar Menu</a>
       <a href="beer.html">Beer and Wine</a>
-      <a href="classics.html">Classic Cocktails</a>
+      <a href="classics.html" class="active">Classic Cocktails</a>
       <a href="seasonal.html">Seasonal Cocktails</a>
       <a href="spirits.html">Spirits List</a>
       <a href="homebrew.html">Homebrewing</a>
@@ -21,242 +24,677 @@
   </header>
 
   <main>
-    <h1>Classic Cocktails</h1>
-    <section class="cocktail-list">
-      <h2>Whiskey</h2>
-      <div class="cocktail">
-        <span class="icon">🍸</span>
-        <h3>Manhattan</h3>
-        <p>
-          2 oz Bourbon or Rye<br>
-          3/4 oz Sweet Vermouth<br>
-          Angostura Bitters<br>
-          Maraschino cherry<br><br>
+    <div class="container">
+      <h1>Classic Cocktails</h1>
 
-          A bold, boozy mix of whiskey, sweet vermouth, and bitters.
-        </p>
-      </div>
-      <div class="cocktail">
-        <span class="icon">🥃</span>
-        <h3>Whiskey Sour</h3>
-        <p>
-          2 oz Bourbon<br>
-          3/4 oz Lemon juice<br>
-          3/4 oz Simple syrup<br>
-          Egg white<br>
-          Angostura bitters<br>
-          Maraschino cherry<br><br>
-
-          A refreshing blend of whiskey, lemon juice, and simple syrup.
-        </p>
-      </div>
-      <div class="cocktail">
-        <span class="icon">🥃</span>
-        <h3>Old Fashioned</h3>
-        <p>
-          2 oz Bourbon or Rye<br>
-          1/4 oz demerara syrup<br>
-          Angostura bitters<br>
-          Golden Bitters<br>
-          Orange twist and lemon twist<br><br>
-
-          A classic combination of whiskey, sugar, bitters, and an orange twist.
-        </p>
-      </div>
-      <h2>Gin</h2>
-      <div class="cocktail">
-        <span class="icon">🍸</span>
-        <h3>Gin and Tonic</h3>
-        <p>
-          2 oz Gin<br>
-          4 oz Tonic water<br>
-          Lime wedge<br><br>
-
-          A crisp and bubbly mix of gin and tonic water with lime.
-        </p>
-      </div>
-      <div class="cocktail">
-        <span class="icon">🍸</span>
-        <h3>Tom Collins</h3>
-        <p>
-          2 oz Gin<br>
-          1 oz Lemon juice<br>
-          3/4 oz Simple syrup<br>
-          Club soda<br>
-          Orange wedge and cherry<br><br>
-
-          A refreshing mix of gin, lemon juice, and club soda.
-        </p>
-      </div>
-      <div class="cocktail">
-        <span class="icon">🥃</span>
-        <h2>Gin Fizz</h2>
-        <p>
-          2 oz Gin<br>
-          1 oz Lemon juice<br>
-          3/4 oz Simple syrup<br>
-          Egg white<br>
-          Club soda<br><br>
-
-          This blackberry whiskey sour takes the classic cocktail to the next level with the addition of muddled blackberries and a float of Chambord.
-        </p>
-      </div>
-      <div class="cocktail">
-        <span class="icon">🍸</span>
-        <h3>Negroni</h3>
-        <p>
-          1.5 oz Gin<br>
-          1 oz Campari<br>
-          1 oz Sweet vermouth<br>
-          Orange twist<br><br>
-
-          A bitter, complex mix of gin, Campari, and sweet vermouth.
-        </p>
-      </div>
-            <div class="cocktail">
-        <span class="icon">🍸</span>
-        <h3>Gin Rickey</h3>
-        <p>
-          2 oz Gin<br>
-          1 oz Lime juice<br>
-          3/4 oz Simple syrup<br>
-          Club soda<br>
-          Lime wedge<br><br>
-
-          A refreshing mix of gin, lemon juice, and club soda.
-        </p>
+      <div class="search-bar">
+        <input type="text" class="search-input" id="cocktail-search" placeholder="Search cocktails...">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
       </div>
 
-      <h2>Rum</h2>
-      <div class="cocktail">
-        <span class="icon">🍹</span>
-        <h3>Dark and Stormy</h3>
-        <p>
-          2 oz Dark rum<br>
-          4 oz Ginger beer<br>
-          1/2 oz Lime juice<br>
-          Lime wedge<br><br>
-
-          A spicy-sweet mix of dark rum and ginger beer with a splash of lime.
-        </p>
-      </div>
-      <div class="cocktail">
-        <span class="icon">🍹</span>
-        <h3>Mojito</h3>
-        <p>
-          2 oz Light rum<br>
-          3/4 oz Simple syrup<br>
-          1 oz Lime juice<br>
-          6-8 Mint leaves<br>
-          Mint garnish<br><br>
-
-          A refreshing mix of light rum, mint, and lime juice.
-        </p>
-      </div>
-      <div class="cocktail">
-        <span class="icon">🍹</span>
-        <h3>Daiquiri</h3>
-        <p>
-          2 oz Light rum<br>
-          3/4 oz Lime juice<br>
-          1/2 oz Simple syrup<br>
-          Lime wheel<br><br>
-
-          A classic mix of light rum, lime juice, and simple syrup.
-        </p>
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="whiskey">Whiskey</button>
+        <button class="filter-btn" data-filter="gin">Gin</button>
+        <button class="filter-btn" data-filter="rum">Rum</button>
+        <button class="filter-btn" data-filter="tequila">Tequila</button>
+        <button class="filter-btn" data-filter="vodka">Vodka</button>
+        <button class="filter-btn" data-filter="other">Other</button>
       </div>
 
-      <h2>Tequila</h2>
-      <div class="cocktail">
-        <span class="icon">🍸</span>
-        <h3>Margarita</h3>
-        <p>
-          2 oz Tequila<br>
-          1 oz Lime juice<br>
-          3/4 oz Cointreau<br>
-          Salt rim<br><br>
+      <section class="cocktail-list">
 
-          A tart, salty-sweet classic with tequila, lime juice, and orange liqueur.
-        </p>
-      </div>
-      <div class="cocktail">
-        <span class="icon">🥃</span>
-        <h3>Oaxacan Old Fashioned</h3>
-        <p>
-          1.5 oz Tequila Reposado<br>
-          1/2 oz Mezcal<br>
-          1/4 oz Agave syrup<br>
-          Angostura bitters<br>
-          Flamed orange twist<br><br>
+        <!-- Cocktail list -->
 
-          Death and Co's famous twist on the classic, combining mezcal and tequila with agave syrup and bitters.
-        </p>
-      </div>
+        <div class="cocktail" data-type="whiskey">
+          <span class="icon">🥃</span>
+          <h2>Manhattan</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 oz Bourbon or Rye</li>
+                <li>3/4 oz Sweet Vermouth</li>
+                <li>Angostura Bitters</li>
+                <li>Maraschino cherry</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A bold, boozy mix of whiskey, sweet vermouth, and bitters. The Manhattan is a classic cocktail dating
+                back to
+                the late 1800s.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="manhattan">Full Recipe</button>
+          </div>
+        </div>
 
-      <h2>Mezcal</h2>
-      <div class="cocktail">
-        <span class="icon">🍸</span>
-        <h3>Under the Volcano</h3>
-        <p>
-          1 oz Mezcal<br>
-          1 oz Amaro Nonnino<br>
-          1 oz Lusteau East India Sherry<br><br>
+        <div class="cocktail" data-type="whiskey">
+          <span class="icon">🥃</span>
+          <h2>Whiskey Sour</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 oz Bourbon</li>
+                <li>3/4 oz Lemon juice</li>
+                <li>3/4 oz Simple syrup</li>
+                <li>Egg white</li>
+                <li>Angostura bitters</li>
+                <li>Maraschino cherry</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A refreshing blend of whiskey, lemon juice, and simple syrup. The egg white creates a silky texture and
+                frothy
+                top.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="whiskey-sour">Full Recipe</button>
+          </div>
+        </div>
 
-          A smoky, herbal cocktail from the legendary Hawthorne in Boston, MA.
-        </p>
-      </div>
+        <div class="cocktail" data-type="whiskey">
+          <span class="icon">🥃</span>
+          <h2>Old Fashioned</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 oz Bourbon or Rye</li>
+                <li>1/4 oz demerara syrup</li>
+                <li>Angostura bitters</li>
+                <li>Golden Bitters</li>
+                <li>Orange twist and lemon twist</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A classic combination of whiskey, sugar, bitters, and an orange twist. One of the oldest known
+                cocktails,
+                dating back to the early 1800s.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="old-fashioned">Full Recipe</button>
+          </div>
+        </div>
 
-      <h2>Vodka</h2>
-      <div class="cocktail">
-        <span class="icon">🧉</span>
-        <h3>Moscow Mule</h3>
-        <p>
-          A zingy combo of vodka, ginger beer, and lime, typically served in a copper mug.
-        </p>
-      </div>
-      <div class="cocktail">
-        <span class="icon">🧉</span>
-        <h3>Martini</h3>
-        <p>
-          2 oz Vodka<br>
-          1/2 oz Dry vermouth<br>
-          Lemon twist or olive<br><br>
+        <div class="cocktail" data-type="gin">
+          <span class="icon">🍸</span>
+          <h2>Gin and Tonic</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 oz Gin</li>
+                <li>4 oz Tonic water</li>
+                <li>Lime wedge</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A crisp and bubbly mix of gin and tonic water with lime. Originally created by British officers in
+                India who
+                mixed quinine tonic with gin to make it more palatable.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="gin-tonic">Full Recipe</button>
+          </div>
+        </div>
 
-          A sophisticated mix of vodka and dry vermouth, garnished with a lemon twist.
-        </p>
-      </div>
+        <div class="cocktail" data-type="gin">
+          <span class="icon">🍸</span>
+          <h2>Tom Collins</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 oz Gin</li>
+                <li>1 oz Lemon juice</li>
+                <li>3/4 oz Simple syrup</li>
+                <li>Club soda</li>
+                <li>Orange wedge and cherry</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A refreshing mix of gin, lemon juice, and club soda. Named after a widespread practical joke that swept
+                across
+                New York in 1874.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="tom-collins">Full Recipe</button>
+          </div>
+        </div>
 
-      <h2>Other</h2>
-      <div class="cocktail">
-        <span class="icon">🥂</span>
-        <h3>Aperol Spritz</h3>
-        <p>
-          3 oz Prosecco<br>
-          2 oz Aperol<br>
-          1 oz Soda water<br>
-          Orange slice<br><br>
+        <div class="cocktail" data-type="gin">
+          <span class="icon">🍸</span>
+          <h2>Gin Fizz</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 oz Gin</li>
+                <li>1 oz Lemon juice</li>
+                <li>3/4 oz Simple syrup</li>
+                <li>Egg white</li>
+                <li>Club soda</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A frothy, refreshing classic featuring gin, citrus, and the silky texture of egg white. The Ramos Gin
+                Fizz
+                variation adds cream and orange flower water for extra decadence.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="gin-fizz">Full Recipe</button>
+          </div>
+        </div>
 
-          A light and bubbly Italian aperitif made with Aperol, Prosecco, and soda water.
-        </p>
-      </div>
-      <div class="cocktail">
-        <span class="icon">🥂</span>
-        <h3>Grasshopper</h3>
-        <p>
-          1.5 oz Heavy cream<br>
-          1 oz Creme de menthe<br>
-          1 oz Gifford Cacao<br>
-          1/4 oz Branca Menta<br>
-          Chocolate garnish<br><br>
+        <div class="cocktail" data-type="gin">
+          <span class="icon">🍸</span>
+          <h2>Negroni</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>1 oz Gin</li>
+                <li>1 oz Campari</li>
+                <li>1 oz Sweet vermouth</li>
+                <li>Orange twist</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A bitter, complex mix of gin, Campari, and sweet vermouth. Legend has it that Count Camillo Negroni
+                created it
+                in Florence in 1919 when he asked for gin instead of soda in his Americano.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="negroni">Full Recipe</button>
+          </div>
+        </div>
 
-          A creamy, minty dessert cocktail that's heavy and indulgent.
-        </p>
-      </div>
-    </section>
+        <div class="cocktail" data-type="gin">
+          <span class="icon">🍸</span>
+          <h2>Gin Rickey</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 oz Gin</li>
+                <li>1 oz Lime juice</li>
+                <li>Club soda</li>
+                <li>Lime wedge</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A refreshing mix of gin, lime juice, and club soda. Named after lobbyist Colonel Joe Rickey, who
+                created the
+                original version with bourbon in the 1880s.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="gin-rickey">Full Recipe</button>
+          </div>
+        </div>
+
+        <div class="cocktail" data-type="gin">
+          <span class="icon">🍸</span>
+          <h2>Martini</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>3 oz Gin</li>
+                <li>1/2 oz Dry vermouth</li>
+                <li>Lemon twist or olive for garnish</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A sophisticated mix of gin and dry vermouth.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="martini">Full Recipe</button>
+          </div>
+        </div>
+
+        <div class="cocktail" data-type="rum">
+          <span class="icon">🍹</span>
+          <h2>Dark and Stormy</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 oz Dark rum (preferably Gosling's Black Seal)</li>
+                <li>4 oz Ginger beer</li>
+                <li>1/2 oz Lime juice</li>
+                <li>Lime wedge</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A spicy-sweet mix of dark rum and ginger beer with a splash of lime. The official drink of Bermuda,
+                where
+                Gosling's Black Seal rum originates.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="dark-stormy">Full Recipe</button>
+          </div>
+        </div>
+
+        <div class="cocktail" data-type="rum">
+          <span class="icon">🍹</span>
+          <h2>Mojito</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 oz Light rum</li>
+                <li>3/4 oz Fresh lime juice</li>
+                <li>1/2 oz Simple syrup</li>
+                <li>6-8 Fresh mint leaves</li>
+                <li>Soda water</li>
+                <li>Mint sprig for garnish</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A refreshing mix of light rum, mint, and lime juice. This classic Cuban cocktail has been popular since
+                the
+                early 1900s.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="mojito">Full Recipe</button>
+          </div>
+        </div>
+
+        <div class="cocktail" data-type="rum">
+          <span class="icon">🍹</span>
+          <h2>Daiquiri</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 oz Light rum</li>
+                <li>3/4 oz Fresh lime juice</li>
+                <li>1/2 oz Simple syrup</li>
+                <li>Lime wheel for garnish</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A classic mix of light rum, lime juice, and simple syrup. Named after a beach near Santiago, Cuba,
+                where the
+                drink was supposedly invented in the early 1900s.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="daiquiri">Full Recipe</button>
+          </div>
+        </div>
+
+        <div class="cocktail" data-type="tequila-mezcal">
+          <span class="icon">🍸</span>
+          <h2>Margarita</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 oz Tequila</li>
+                <li>1 oz Fresh lime juice</li>
+                <li>3/4 oz Cointreau</li>
+                <li>Salt for rimming</li>
+                <li>Lime wheel for garnish</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A tart, salty-sweet classic with tequila, lime juice, and orange liqueur. One of the most popular
+                cocktails in
+                the world, with dozens of origin stories dating to the 1930s and 40s.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="margarita">Full Recipe</button>
+          </div>
+        </div>
+
+        <div class="cocktail" data-type="tequila-mezcal">
+          <span class="icon">🍸</span>
+          <h2>Oaxacan Old Fashioned</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>1.5 oz Tequila Reposado</li>
+                <li>1/2 oz Mezcal</li>
+                <li>1/4 oz Agave syrup</li>
+                <li>2 dashes Angostura bitters</li>
+                <li>Flamed orange twist</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>Death & Co's famous twist on the classic, combining mezcal and tequila with agave syrup and bitters.
+                Created by
+                Phil Ward, it showcases the complementary flavors of tequila and mezcal.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="oaxacan-old-fashioned">Full Recipe</button>
+          </div>
+        </div>
+
+        <div class="cocktail" data-type="tequila-mezcal">
+          <span class="icon">🍸</span>
+          <h2>Under the Volcano</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>1 oz Mezcal</li>
+                <li>1 oz Amaro Nonnino</li>
+                <li>1 oz Lusteau East India Sherry</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A smoky, herbal cocktail from the legendary Hawthorne in Boston, MA. Named after Malcolm Lowry's novel,
+                it
+                balances the smoke of mezcal with amaro's herbal complexity and sherry's nutty richness.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="under-volcano">Full Recipe</button>
+          </div>
+        </div>
+
+        <div class="cocktail" data-type="vodka">
+          <span class="icon">🍸</span>
+          <h2>Moscow Mule</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 oz Vodka</li>
+                <li>4 oz Ginger beer</li>
+                <li>1/2 oz Fresh lime juice</li>
+                <li>Lime wedge for garnish</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A zingy combo of vodka, ginger beer, and lime, typically served in a copper mug. Created in 1941 as a
+                marketing
+                collaboration to sell vodka and ginger beer in America.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="moscow-mule">Full Recipe</button>
+          </div>
+        </div>
+
+        <div class="cocktail" data-type="vodka">
+          <span class="icon">🍸</span>
+          <h2>Vodka Martini</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2.5 oz Vodka</li>
+                <li>1/2 oz Dry vermouth</li>
+                <li>Lemon twist or olive for garnish</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A sophisticated mix of vodka and dry vermouth. While the gin martini is the original, the vodka version
+                gained
+                immense popularity in the mid-20th century.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="vodka-martini">Full Recipe</button>
+          </div>
+        </div>
+
+        <div class="cocktail" data-type="other">
+          <span class="icon">🍸</span>
+          <h2>Aperol Spritz</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>3 oz Prosecco</li>
+                <li>2 oz Aperol</li>
+                <li>1 oz Soda water</li>
+                <li>Orange slice for garnish</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A light and bubbly Italian aperitif made with Aperol, Prosecco, and soda water. The iconic orange
+                aperitivo of
+                Northern Italy, perfect for pre-dinner drinks.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="aperol-spritz">Full Recipe</button>
+          </div>
+        </div>
+
+        <div class="cocktail" data-type="other">
+          <span class="icon">🍸</span>
+          <h2>Grasshopper</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>1.5 oz Heavy cream</li>
+                <li>1 oz Crème de menthe</li>
+                <li>1 oz Giffard Cacao</li>
+                <li>1/4 oz Branca Menta</li>
+                <li>Chocolate shavings for garnish</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>A creamy, minty dessert cocktail that's heavy and indulgent. Created at Tujague's in New Orleans in the
+                early
+                20th century, it's a perfect after-dinner drink.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="grasshopper">Full Recipe</button>
+          </div>
+        </div>
+
+        <!-- Cocktail list -->
+
   </main>
 
+  <!-- Recipe Modal -->
+  <div class="modal-overlay" id="recipe-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-modal">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
   <footer>
-    &copy; 2025 Griffin Ansel
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Griffin Ansel | The Tipsy Griffin</p>
+        <p class="disclaimer">Please drink responsibly.</p>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', function () {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // DOM content loaded event
+    document.addEventListener('DOMContentLoaded', function () {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const cocktails = document.querySelectorAll('.cocktail');
+      const searchInput = document.getElementById('cocktail-search');
+      const recipeButtons = document.querySelectorAll('.view-recipe');
+      const modal = document.getElementById('recipe-modal');
+      const closeModal = document.getElementById('close-modal');
+      const modalContent = document.getElementById('modal-content');
+
+      // Filter buttons click event
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+
+          // Add active class to clicked button
+          button.classList.add('active');
+
+          const filter = button.getAttribute('data-filter');
+
+          // Show/hide cocktails based on filter
+          cocktails.forEach(cocktail => {
+            if (filter === 'all') {
+              cocktail.style.display = 'block';
+            } else {
+              if (cocktail.getAttribute('data-type').includes(filter)) {
+                cocktail.style.display = 'block';
+              } else {
+                cocktail.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+
+      // Search functionality
+      if (searchInput) {
+        searchInput.addEventListener('input', () => {
+          const searchTerm = searchInput.value.toLowerCase();
+
+          cocktails.forEach(cocktail => {
+            const cocktailName = cocktail.querySelector('h2').textContent.toLowerCase();
+            const cocktailIngredients = cocktail.querySelector('.ingredients').textContent.toLowerCase();
+
+            if (cocktailName.includes(searchTerm) || cocktailIngredients.includes(searchTerm)) {
+              cocktail.style.display = 'block';
+            } else {
+              cocktail.style.display = 'none';
+            }
+          });
+        });
+      }
+
+      // Load recipes from JSON file
+      let recipes = {};
+      fetch('recipes.json')
+        .then(response => response.json())
+        .then(data => {
+          recipes = data;
+          console.log('Recipes loaded successfully');
+        })
+        .catch(error => {
+          console.error('Error loading recipes:', error);
+          // Fallback in case the JSON file fails to load
+          recipes = {
+            'recipe-not-found': {
+              name: 'Recipe Not Found',
+              ingredients: ['Unable to load recipe data'],
+              instructions: ['Please try again later'],
+              description: 'We\'re having trouble accessing our recipe database.'
+            }
+          };
+        });
+
+      // Open modal with recipe
+      recipeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const recipeId = button.getAttribute('data-cocktail');
+
+          // Show loading indicator first
+          modalContent.innerHTML = `
+            <div class="loading">
+              <div class="loading-spinner"></div>
+              <p>Loading recipe...</p>
+            </div>
+          `;
+
+          // Show modal right away with loading spinner
+          modal.classList.add('active');
+
+          // Wait a moment to ensure JSON is loaded
+          setTimeout(() => {
+            const recipe = recipes[recipeId] || {
+              name: 'Recipe Coming Soon',
+              ingredients: ['Check back later for the complete recipe!'],
+              instructions: ['This recipe is currently being perfected.'],
+              description: 'We\'re still fine-tuning this delicious cocktail. Check back soon!'
+            };
+
+            // Populate modal content
+            modalContent.innerHTML = `
+  <h2>${recipe.name}</h2>
+  <div class="recipe-content">
+    <div class="recipe-description">${recipe.description}</div>
+    <div class="recipe-details">
+      <h3>Ingredients:</h3>
+      <ul class="ingredients-list bullet-list">
+        ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+      </ul>
+      <h3>Instructions:</h3>
+      <ol class="instructions-list">
+        ${recipe.instructions.map(step => `<li>${step}</li>`).join('')}
+      </ol>
+    </div>
+  </div>
+`;
+          }, 300);
+        });
+      });
+
+      // Close modal
+      if (closeModal) {
+        closeModal.addEventListener('click', () => {
+          modal.classList.remove('active');
+        });
+      }
+
+      // Close modal when clicking outside content
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.remove('active');
+          }
+        });
+      }
+    });
+  </script>
 </body>
+
 </html>

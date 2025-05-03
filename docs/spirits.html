@@ -4,165 +4,285 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Spirits List</title>
+  <title>Spirits List - The Tipsy Griffin</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </head>
 <body>
-  <header>
+  <header id="main-header">
     <img src="images/logo-seal.png" alt="The Tipsy Griffin" class="seal-logo">
     <nav>
       <a href="index.html">Bar Menu</a> 
       <a href="beer.html">Beer and Wine</a>
       <a href="classics.html">Classic Cocktails</a>
       <a href="seasonal.html">Seasonal Cocktails</a>
-      <a href="spirits.html">Spirits List</a>
+      <a href="spirits.html" class="active">Spirits List</a>
       <a href="homebrew.html">Homebrewing</a>
     </nav>
   </header>
 
   <main>
-    <h1>Spirits List</h1>
+    <div class="container">
+      <h1>Spirits List</h1>
+      
+      <div class="search-bar">
+        <input type="text" class="search-input" id="spirit-search" placeholder="Search spirits...">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="whiskey">Whiskey</button>
+        <button class="filter-btn" data-filter="gin">Gin</button>
+        <button class="filter-btn" data-filter="rum">Rum</button>
+        <button class="filter-btn" data-filter="tequila-mezcal">Agave</button>
+        <button class="filter-btn" data-filter="other">Other</button>
+      </div>
 
-    <section class="spirits-category">
-      <h2>Whiskey</h2>
-      <h3>Bourbon</h3>
-      <ul>
-        <li>Elijah Craig Small Batch</li>
-        <li>Larceny Barrel Proof</li>
-        <li>Bardstown Bourbon Company Origin Series Bourbon Bottled in Bond</li>
-      </ul>
-      <br>
-      <h3>Rye</h3>
-      <ul>
-        <li>Rittenhouse Rye</li>
-        <li>Bardstown Bourbon Company Origin Series Rye</li>
-      </ul>
-      <br>
-      <h3>Japanese</h3>
-      <ul>
-        <li>Nikka Whisky from the Barrel</li>
-        <li>Hibiki Suntory Japanese Harmony</li>
-      </ul>
-      <br>
-      <h3>Scotch</h3>
-      <ul>
-        <li>The Glenlivet 12</li>
-        <li>Bunnahabhain Cruach-Mhona</li>
-        <li>Lagavulin 16</li>
-      </ul>
-      <br>
-      <h3>Irish</h3>
-      <ul>
-        <li>Jameson Irish Whiskey</li>
-      </ul>
-      <br>
-      <h2>Gin</h2>
-      <h3>London Dry</h3>
-      <ul>
-        <li>Beefeater London Dry</li>
-      </ul>
-      <br>
-      <h2>Rum</h2>
-      <h3>Light</h3>
-      <ul>
-        <li>Flor de Caña 4 Year Extra Seco</li>
-      </ul>
-      <br>
-      <h3>Dark</h3>
-      <ul>
-        <li>Bumbu XO</li>
-      </ul>
-      <br>
-      <h3>Cuban</h3>
-      <ul>
-        <li>Havana Club Especial</li>
-        <li>Havana Club 7 Year</li>
-        <li>Ron La Progresiva 13 Year</li>
-      </ul>
-      <br>
-      <h2>Tequila and Mezcal</h2>
-      <h3>Tequila</h3>
-      <ul>
-        <li>Espolon Reposado</li>
-        <li>La Gritona Reposado</li>
-      </ul>
-      <br>
-      <h3>Mezcal</h3>
-      <ul>
-        <li>Del Maguey Vida Pueblo</li>
-        <li>Del Maguey Vida Clasico</li>
-        <li>Nuestra Soledad Lachigui</li>
-        <li>El Jolgorio Arroqueño</li>
-        <li>El Jolgorio Tobasiche</li>
-      </ul>
-      <br>
-      <h3>Sotol</h3>
-      <ul>
-        <li>Sotol La Higuera</li>
-      </ul>
-      <br>
-      <h2>Amaro</h2>
-      <ul>
-        <li>Meletti</li>
-        <li>Amaro Nonnino</li>
-        <li>Amaro Sfumato</li>
-        <li>Branca Menta</li>
-      </ul>
-      <br>
-      <h2>Cognac</h2>
-      <ul>
-        <li>Villon</li>
-      </ul>
-      <br>
-      <h2>Vodka</h2>
-      <ul>
-        <li>Skyy Vodka of San Francisco</li>
-      </ul>
-      <br>
-      <h2>Cordials</h2>
-      <ul>
-        <li>Chambord</li>
-        <li>Cointreau</li>
-        <li>Aperol</li>
-        <li>Kahlua</li>
-        <li>Batavia Arrack</li>
-        <li>Marie Brizzard No. 33 White Mint</li>
-        <li>Underberg</li>
-        <li>Giffard Cacao</li>
-      </ul>
-      <br>
-      <h2>Sherry and Vermouth</h2>
-      <ul>
-        <li>East India Lusteau Solera Sherry</li>
-        <li>Dolin Sweet Red Vermouth</li>
-        <li>Dolin Dry Vermouth</li>
-      </ul>
-      <br>
-      <h2>Bitters</h2>
-      <ul>
-        <li>Angostura</li>
-        <li>Angostura Orange</li>
-        <li>Bittermen's Hellfire</li>
-        <li>The Bitter Truth Chocolate Bitters</li>
-        <li>Strongwater Cherry Bitters</li>
-        <li>Strongwater Orange Bitters</li>
-        <li>Strongwater Golden Bitters</li>
-        <li>Strongwater Virtue Bitters</li>
-        <li>Strongwater Floral Bitters</li>
-      </ul>
-      <br>
-      <h2>Syrups</h2>
-      <ul>
-        <li>Agave Syrup</li>
-        <li>Simple Syrup</li>
-        <li>Grenadine</li>
-      </ul>
-      <br>
-    </section>
+      <section class="spirits-category">
+        <h2>Whiskey</h2>
+        <div class="beverage-item" data-type="whiskey bourbon">
+          <h3>Bourbon</h3>
+          <ul>
+            <li>Elijah Craig Small Batch <span class="beverage-notes">94 Proof, Kentucky</span></li>
+            <li>Larceny Barrel Proof <span class="beverage-notes">123.2 Proof, Kentucky</span></li>
+            <li>Bardstown Bourbon Company Origin Series <span class="beverage-notes">Bottled in Bond, 100 Proof, Kentucky</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="whiskey rye">
+          <h3>Rye</h3>
+          <ul>
+            <li>Rittenhouse Rye <span class="beverage-notes">Bottled in Bond, 100 Proof, Kentucky</span></li>
+            <li>Bardstown Bourbon Company Origin Series Rye <span class="beverage-notes">96 Proof, Kentucky</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="whiskey japanese">
+          <h3>Japanese</h3>
+          <ul>
+            <li>Nikka Whisky from the Barrel <span class="beverage-notes">102.8 Proof, Japan</span></li>
+            <li>Hibiki Suntory Japanese Harmony <span class="beverage-notes">86 Proof, Japan</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="whiskey scotch">
+          <h3>Scotch</h3>
+          <ul>
+            <li>The Glenlivet 12 <span class="beverage-notes">Single Malt, 80 Proof, Speyside</span></li>
+            <li>Bunnahabhain Cruach-Mhona <span class="beverage-notes">Single Malt, 100 Proof, Islay</span></li>
+            <li>Lagavulin 16 <span class="beverage-notes">Single Malt, 86 Proof, Islay</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="whiskey irish">
+          <h3>Irish</h3>
+          <ul>
+            <li>Jameson Irish Whiskey <span class="beverage-notes">80 Proof, Ireland</span></li>
+          </ul>
+        </div>
+        
+        <h2>Gin</h2>
+        <div class="beverage-item" data-type="gin london">
+          <h3>London Dry</h3>
+          <ul>
+            <li>Beefeater London Dry <span class="beverage-notes">94 Proof, England</span></li>
+          </ul>
+        </div>
+        
+        <h2>Rum</h2>
+        <div class="beverage-item" data-type="rum light">
+          <h3>Light</h3>
+          <ul>
+            <li>Flor de Caña 4 Year Extra Seco <span class="beverage-notes">80 Proof, Nicaragua</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="rum dark">
+          <h3>Dark</h3>
+          <ul>
+            <li>Bumbu XO <span class="beverage-notes">80 Proof, Panama</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="rum cuban">
+          <h3>Cuban</h3>
+          <ul>
+            <li>Havana Club Especial <span class="beverage-notes">80 Proof, Cuba</span></li>
+            <li>Havana Club 7 Year <span class="beverage-notes">80 Proof, Cuba</span></li>
+            <li>Ron La Progresiva 13 Year <span class="beverage-notes">94 Proof, Cuba</span></li>
+          </ul>
+        </div>
+        
+        <h2>Tequila and Mezcal</h2>
+        <div class="beverage-item" data-type="tequila-mezcal tequila">
+          <h3>Tequila</h3>
+          <ul>
+            <li>Espolon Reposado <span class="beverage-notes">80 Proof, Jalisco, Mexico</span></li>
+            <li>La Gritona Reposado <span class="beverage-notes">86 Proof, Valle de Guadalupe, Mexico</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="tequila-mezcal mezcal">
+          <h3>Mezcal</h3>
+          <ul>
+            <li>Del Maguey Vida Pueblo <span class="beverage-notes">84 Proof, Oaxaca, Mexico</span></li>
+            <li>Del Maguey Vida Clasico <span class="beverage-notes">90 Proof, Oaxaca, Mexico</span></li>
+            <li>Nuestra Soledad Lachigui <span class="beverage-notes">90 Proof, Oaxaca, Mexico</span></li>
+            <li>El Jolgorio Arroqueño <span class="beverage-notes">98 Proof, Oaxaca, Mexico</span></li>
+            <li>El Jolgorio Tobasiche <span class="beverage-notes">94 Proof, Oaxaca, Mexico</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="tequila-mezcal sotol">
+          <h3>Sotol</h3>
+          <ul>
+            <li>Sotol La Higuera <span class="beverage-notes">86 Proof, Chihuahua, Mexico</span></li>
+          </ul>
+        </div>
+        
+        <h2>Other Spirits</h2>
+        <div class="beverage-item" data-type="other amaro">
+          <h3>Amaro</h3>
+          <ul>
+            <li>Meletti <span class="beverage-notes">64 Proof, Italy</span></li>
+            <li>Amaro Nonnino <span class="beverage-notes">70 Proof, Italy</span></li>
+            <li>Amaro Sfumato <span class="beverage-notes">80 Proof, Italy</span></li>
+            <li>Branca Menta <span class="beverage-notes">60 Proof, Italy</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="other cognac">
+          <h3>Cognac</h3>
+          <ul>
+            <li>Villon <span class="beverage-notes">80 Proof, France</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="other vodka">
+          <h3>Vodka</h3>
+          <ul>
+            <li>Skyy Vodka <span class="beverage-notes">80 Proof, San Francisco, USA</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="other cordials">
+          <h3>Cordials</h3>
+          <ul>
+            <li>Chambord <span class="beverage-notes">Black Raspberry Liqueur, 33 Proof, France</span></li>
+            <li>Cointreau <span class="beverage-notes">Orange Liqueur, 80 Proof, France</span></li>
+            <li>Aperol <span class="beverage-notes">Aperitif, 22 Proof, Italy</span></li>
+            <li>Kahlua <span class="beverage-notes">Coffee Liqueur, 40 Proof, Mexico</span></li>
+            <li>Batavia Arrack <span class="beverage-notes">100 Proof, Indonesia</span></li>
+            <li>Marie Brizzard No. 33 White Mint <span class="beverage-notes">60 Proof, France</span></li>
+            <li>Underberg <span class="beverage-notes">Digestif, 88 Proof, Germany</span></li>
+            <li>Giffard Cacao <span class="beverage-notes">Chocolate Liqueur, 50 Proof, France</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="other fortified">
+          <h3>Sherry and Vermouth</h3>
+          <ul>
+            <li>East India Lusteau Solera Sherry <span class="beverage-notes">40 Proof, Spain</span></li>
+            <li>Dolin Sweet Red Vermouth <span class="beverage-notes">32 Proof, France</span></li>
+            <li>Dolin Dry Vermouth <span class="beverage-notes">35 Proof, France</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="other bitters">
+          <h3>Bitters</h3>
+          <ul>
+            <li>Angostura <span class="beverage-notes">Aromatic Bitters, Trinidad & Tobago</span></li>
+            <li>Angostura Orange <span class="beverage-notes">Orange Bitters, Trinidad & Tobago</span></li>
+            <li>Bittermen's Hellfire <span class="beverage-notes">Habanero Shrub, USA</span></li>
+            <li>The Bitter Truth Chocolate Bitters <span class="beverage-notes">Germany</span></li>
+            <li>Strongwater Cherry Bitters <span class="beverage-notes">USA</span></li>
+            <li>Strongwater Orange Bitters <span class="beverage-notes">USA</span></li>
+            <li>Strongwater Golden Bitters <span class="beverage-notes">USA</span></li>
+            <li>Strongwater Virtue Bitters <span class="beverage-notes">USA</span></li>
+            <li>Strongwater Floral Bitters <span class="beverage-notes">USA</span></li>
+          </ul>
+        </div>
+        
+        <div class="beverage-item" data-type="other syrups">
+          <h3>Syrups</h3>
+          <ul>
+            <li>Agave Syrup <span class="beverage-notes">Natural Sweetener</span></li>
+            <li>Simple Syrup <span class="beverage-notes">Housemade</span></li>
+            <li>Grenadine <span class="beverage-notes">Pomegranate Syrup, Housemade</span></li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>
-    &copy; 2025 Griffin Ansel
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Griffin Ansel | The Tipsy Griffin</p>
+        <p class="disclaimer">Please drink responsibly.</p>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const beverages = document.querySelectorAll('.beverage-item');
+      const searchInput = document.getElementById('spirit-search');
+      
+      // Filter buttons click event
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to clicked button
+          button.classList.add('active');
+          
+          const filter = button.getAttribute('data-filter');
+          
+          // Show/hide beverages based on filter
+          beverages.forEach(beverage => {
+            if (filter === 'all') {
+              beverage.style.display = 'block';
+            } else {
+              if (beverage.getAttribute('data-type').includes(filter)) {
+                beverage.style.display = 'block';
+              } else {
+                beverage.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+      
+      // Search functionality
+      searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        
+        beverages.forEach(beverage => {
+          const beverageText = beverage.textContent.toLowerCase();
+          
+          if (beverageText.includes(searchTerm)) {
+            beverage.style.display = 'block';
+          } else {
+            beverage.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
