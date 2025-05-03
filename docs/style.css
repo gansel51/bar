@@ -273,15 +273,17 @@ footer {
   color: var(--main-bg);
 }
 
-/* Search Bar */
+/* Search Bar - fixed size */
 .search-bar {
   display: flex;
-  max-width: 500px;
+  width: 500px; /* Fixed width instead of max-width */
   margin: 1em auto 2em;
+  position: relative;
+  z-index: 5;
 }
 
 .search-input {
-  flex-grow: 1;
+  flex: 1;
   padding: 0.8em 1em;
   border: none;
   border-radius: 50px 0 0 50px;
@@ -292,11 +294,6 @@ footer {
   transition: all var(--transition-speed) ease;
 }
 
-.search-input:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px var(--accent-color);
-}
-
 .search-btn {
   background-color: var(--accent-color);
   color: var(--main-bg);
@@ -305,10 +302,8 @@ footer {
   padding: 0 1.5em;
   cursor: pointer;
   transition: all var(--transition-speed) ease;
-}
-
-.search-btn:hover {
-  background-color: var(--gold);
+  min-width: 60px;
+  flex-shrink: 0; /* Prevent button from shrinking */
 }
 
 /* Info Tooltip */
@@ -516,14 +511,16 @@ footer {
   }
 
   .search-bar {
-    flex-direction: column;
+    width: 100%; /* Full width on small screens */
+    max-width: 500px; /* But not larger than 500px */
   }
 
-  .search-input,
+  .search-input {
+    width: auto; /* Let the input size itself */
+  }
+
   .search-btn {
-    border-radius: 50px;
-    width: 100%;
-    margin-bottom: 0.5em;
+    width: auto;
   }
 
   .brew-stats {
@@ -703,14 +700,79 @@ footer {
     max-width: 300px;
   }
 }
-/* Add these CSS rules to ensure consistent header styling */
 #main-header {
-  background-color: var(--header-bg); /* Explicitly set to black */
+  background-color: var(--header-bg);
   transition: all var(--transition-speed) ease;
 }
 
-/* Keep the scrolled behavior as is */
 #main-header.scrolled {
   padding: 0.8em 1em;
-  background-color: var(--header-bg); /* Reinforce black background when scrolled */
+  background-color: var(--header-bg);
+}
+
+/* Loading Spinner */
+.loading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(201, 162, 39, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--accent-color);
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Recipe Modal Styling */
+.recipe-content {
+  margin-top: 1.5rem;
+}
+
+.recipe-description {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.recipe-details {
+  margin-top: 1rem;
+}
+
+/* Ingredients bullets styling */
+.bullet-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bullet-list li {
+  margin-bottom: 0.25rem; /* Reduced from 0.5rem */
+  padding-top: 0;
+  line-height: 1.4; /* Tighter line height */
+}
+
+/* Instructions indentation and styling */
+.instructions-list {
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.instructions-list li {
+  margin-bottom: 0.5rem; /* Reduced from 0.75rem */
+  padding-left: 0.25rem; /* Reduced from 0.5rem */
+  line-height: 1.4; /* Tighter line height */
+}
+
+/* Align the numbers with text */
+.instructions-list li::marker {
+  color: var(--accent-color);
+  font-weight: 600;
 }

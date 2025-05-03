@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
@@ -8,11 +9,12 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </head>
+
 <body>
   <header id="main-header">
     <img src="images/logo-seal.png" alt="The Tipsy Griffin" class="seal-logo">
     <nav>
-      <a href="index.html">Bar Menu</a> 
+      <a href="index.html">Bar Menu</a>
       <a href="beer.html">Beer and Wine</a>
       <a href="classics.html">Classic Cocktails</a>
       <a href="seasonal.html" class="active">Seasonal Cocktails</a>
@@ -24,23 +26,24 @@
   <main>
     <div class="container">
       <h1>Seasonal Cocktails</h1>
-      
+
       <div class="search-bar">
         <input type="text" class="search-input" id="cocktail-search" placeholder="Search cocktails...">
         <button class="search-btn"><i class="fas fa-search"></i></button>
       </div>
-      
+
       <div class="filter-controls">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="tequila">Tequila</button>
-        <button class="filter-btn" data-filter="gin">Gin</button>
         <button class="filter-btn" data-filter="whiskey">Whiskey</button>
+        <button class="filter-btn" data-filter="gin">Gin</button>
         <button class="filter-btn" data-filter="rum">Rum</button>
+        <button class="filter-btn" data-filter="tequila">Tequila</button>
       </div>
-      
+
       <section class="cocktail-list">
-        <div class="cocktail" data-type="tequila mezcal">
-          <span class="icon">🥃</span>
+
+        <div class="cocktail" data-type="tequila-mezcal">
+          <span class="icon">🍸</span>
           <h2>Smoked Mezcal Sour</h2>
           <div class="cocktail-details">
             <div class="ingredients">
@@ -57,16 +60,18 @@
               </ul>
             </div>
             <div class="description">
-              <p>This smoky cocktail is a twist on the classic whiskey sour, combining the flavors of mezcal and tequila with a hint of spice from habanero shrub and froth from the egg to refresh in the spring heat.</p>
+              <p>This smoky cocktail is a twist on the classic whiskey sour, combining the flavors of mezcal and tequila
+                with a
+                hint of spice from habanero shrub and froth from the egg to refresh in the spring heat.</p>
             </div>
           </div>
+          <br>
           <div class="cocktail-footer">
-            <span class="flavor-profile">Smoky • Spicy • Citrus</span>
             <button class="btn btn-small view-recipe" data-cocktail="mezcal-sour">Full Recipe</button>
           </div>
         </div>
 
-        <div class="cocktail" data-type="tequila">
+        <div class="cocktail" data-type="tequila-mezcal">
           <span class="icon">🍸</span>
           <h2>Orange Margarita</h2>
           <div class="cocktail-details">
@@ -85,11 +90,13 @@
               </ul>
             </div>
             <div class="description">
-              <p>This refreshing margarita is a perfect summer drink, combining the flavors of tequila and orange with a hint of spice from Tajín and habanero shrub.</p>
+              <p>This refreshing margarita is a perfect summer drink, combining the flavors of tequila and orange with a
+                hint of
+                spice from Tajín and habanero shrub.</p>
             </div>
           </div>
+          <br>
           <div class="cocktail-footer">
-            <span class="flavor-profile">Citrusy • Spicy • Sweet</span>
             <button class="btn btn-small view-recipe" data-cocktail="orange-margarita">Full Recipe</button>
           </div>
         </div>
@@ -110,11 +117,13 @@
               </ul>
             </div>
             <div class="description">
-              <p>This herbal cocktail combines the flavors of gin and blackberries with a hint of sweetness from honey syrup and Chambord.</p>
+              <p>This herbal cocktail combines the flavors of gin and blackberries with a hint of sweetness from honey
+                syrup and
+                Chambord.</p>
             </div>
           </div>
+          <br>
           <div class="cocktail-footer">
-            <span class="flavor-profile">Fruity • Herbal • Sweet</span>
             <button class="btn btn-small view-recipe" data-cocktail="blackberry-bramble">Full Recipe</button>
           </div>
         </div>
@@ -136,15 +145,15 @@
               <p>This fizzy refresher mixes gin and ginger for a light, sweet, bubbly drink.</p>
             </div>
           </div>
+          <br>
           <div class="cocktail-footer">
-            <span class="flavor-profile">Spicy • Refreshing • Bubbly</span>
             <button class="btn btn-small view-recipe" data-cocktail="ginger-gin-fizz">Full Recipe</button>
           </div>
         </div>
 
         <div class="cocktail" data-type="whiskey">
           <span class="icon">🥃</span>
-          <h2>Blackberry Whiskey Sour</h2>
+          <h2>Blackberry Sour</h2>
           <div class="cocktail-details">
             <div class="ingredients">
               <h3>Ingredients:</h3>
@@ -159,17 +168,18 @@
               </ul>
             </div>
             <div class="description">
-              <p>This blackberry whiskey sour takes the classic cocktail to the next level with the addition of muddled blackberries and a float of Chambord.</p>
+              <p>This blackberry whiskey sour takes the classic cocktail to the next level with the addition of muddled
+                blackberries and a float of Chambord.</p>
             </div>
           </div>
+          <br>
           <div class="cocktail-footer">
-            <span class="flavor-profile">Fruity • Bold • Smooth</span>
             <button class="btn btn-small view-recipe" data-cocktail="blackberry-whiskey-sour">Full Recipe</button>
           </div>
         </div>
 
         <div class="cocktail" data-type="rum">
-          <span class="icon">🥃</span>
+          <span class="icon">🍹</span>
           <h2>Honeysuckle</h2>
           <div class="cocktail-details">
             <div class="ingredients">
@@ -182,14 +192,17 @@
               </ul>
             </div>
             <div class="description">
-              <p>This summer cocktail combines the flavors of white rum and honey syrup with a hint of lime for a light, sweet drink.</p>
+              <p>This summer cocktail combines the flavors of white rum and honey syrup with a hint of lime for a light,
+                sweet
+                drink.</p>
             </div>
           </div>
+          <br>
           <div class="cocktail-footer">
-            <span class="flavor-profile">Sweet • Citrusy • Refreshing</span>
             <button class="btn btn-small view-recipe" data-cocktail="honeysuckle">Full Recipe</button>
           </div>
         </div>
+
       </section>
     </div>
   </main>
@@ -213,7 +226,7 @@
 
   <script>
     // Header scroll effect
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
       const header = document.getElementById('main-header');
       if (window.scrollY > 50) {
         header.classList.add('scrolled');
@@ -222,23 +235,27 @@
       }
     });
 
-    // Filter functionality
-    document.addEventListener('DOMContentLoaded', function() {
+    // DOM content loaded event
+    document.addEventListener('DOMContentLoaded', function () {
       const filterButtons = document.querySelectorAll('.filter-btn');
       const cocktails = document.querySelectorAll('.cocktail');
       const searchInput = document.getElementById('cocktail-search');
-      
+      const recipeButtons = document.querySelectorAll('.view-recipe');
+      const modal = document.getElementById('recipe-modal');
+      const closeModal = document.getElementById('close-modal');
+      const modalContent = document.getElementById('modal-content');
+
       // Filter buttons click event
       filterButtons.forEach(button => {
         button.addEventListener('click', () => {
           // Remove active class from all buttons
           filterButtons.forEach(btn => btn.classList.remove('active'));
-          
+
           // Add active class to clicked button
           button.classList.add('active');
-          
+
           const filter = button.getAttribute('data-filter');
-          
+
           // Show/hide cocktails based on filter
           cocktails.forEach(cocktail => {
             if (filter === 'all') {
@@ -253,196 +270,109 @@
           });
         });
       });
-      
+
       // Search functionality
-      searchInput.addEventListener('input', () => {
-        const searchTerm = searchInput.value.toLowerCase();
-        
-        cocktails.forEach(cocktail => {
-          const cocktailName = cocktail.querySelector('h2').textContent.toLowerCase();
-          const cocktailIngredients = cocktail.querySelector('.ingredients').textContent.toLowerCase();
-          
-          if (cocktailName.includes(searchTerm) || cocktailIngredients.includes(searchTerm)) {
-            cocktail.style.display = 'block';
-          } else {
-            cocktail.style.display = 'none';
-          }
+      if (searchInput) {
+        searchInput.addEventListener('input', () => {
+          const searchTerm = searchInput.value.toLowerCase();
+
+          cocktails.forEach(cocktail => {
+            const cocktailName = cocktail.querySelector('h2').textContent.toLowerCase();
+            const cocktailIngredients = cocktail.querySelector('.ingredients').textContent.toLowerCase();
+
+            if (cocktailName.includes(searchTerm) || cocktailIngredients.includes(searchTerm)) {
+              cocktail.style.display = 'block';
+            } else {
+              cocktail.style.display = 'none';
+            }
+          });
         });
-      });
-      
-      // Recipe modal functionality
-      const recipeButtons = document.querySelectorAll('.view-recipe');
-      const modal = document.getElementById('recipe-modal');
-      const closeModal = document.getElementById('close-modal');
-      const modalContent = document.getElementById('modal-content');
-      
-      // Recipe data (in real implementation, this could be loaded from a JSON file)
-      const recipes = {
-        'mezcal-sour': {
-          name: 'Smoked Mezcal Sour',
-          ingredients: [
-            '1 oz Tequila Reposado',
-            '1/2 oz Mezcal',
-            '3/4 oz Lemon juice',
-            '1/4 oz Pineapple juice',
-            '1/2 oz Honey syrup',
-            'Habanero shrub',
-            'Egg white',
-            'Orange bitters'
-          ],
-          instructions: [
-            'Add all ingredients except bitters to a shaker without ice and dry shake for 15 seconds.',
-            'Add ice and shake again until well-chilled.',
-            'Strain into a rocks glass over fresh ice.',
-            'Add a few dashes of orange bitters on top of the foam.',
-            'Garnish with a dehydrated orange wheel and a sprinkle of chili powder.'
-          ],
-          description: 'This smoky cocktail is a twist on the classic whiskey sour, combining the flavors of mezcal and tequila with a hint of spice from habanero shrub and froth from the egg to refresh in the spring heat.'
-        },
-        'orange-margarita': {
-          name: 'Orange Margarita',
-          ingredients: [
-            '1.5 oz Tequila',
-            '3/4 oz Cointreau',
-            '3/4 oz Orange juice',
-            '1/2 oz Lemon juice',
-            'Lime juice',
-            '1/2 oz Agave syrup',
-            'Habanero shrub',
-            'Angostura bitters',
-            'Tajín-rimmed glass'
-          ],
-          instructions: [
-            'Rim a rocks glass with Tajín and set aside.',
-            'Add all ingredients to a shaker with ice.',
-            'Shake until well-chilled.',
-            'Strain into the prepared glass over fresh ice.',
-            'Garnish with an orange wheel and lime wedge.'
-          ],
-          description: 'This refreshing margarita is a perfect summer drink, combining the flavors of tequila and orange with a hint of spice from Tajín and habanero shrub.'
-        },
-        'blackberry-bramble': {
-          name: 'Blackberry Bramble',
-          ingredients: [
-            '2 oz Gin',
-            '3/4 oz Lemon juice',
-            '1/2 oz Honey syrup',
-            '1/4 oz Chambord',
-            'Blackberry shrub',
-            'Golden bitters'
-          ],
-          instructions: [
-            'Add gin, lemon juice, and honey syrup to a shaker with ice.',
-            'Shake until well-chilled.',
-            'Strain into a rocks glass filled with crushed ice.',
-            'Drizzle Chambord and blackberry shrub over the top.',
-            'Add a few dashes of golden bitters.',
-            'Garnish with fresh blackberries and a lemon wheel.'
-          ],
-          description: 'This herbal cocktail combines the flavors of gin and blackberries with a hint of sweetness from honey syrup and Chambord.'
-        },
-        'ginger-gin-fizz': {
-          name: 'Ginger Gin Fizz',
-          ingredients: [
-            '2 oz Gin',
-            '1/2 oz Lime juice',
-            'Ginger soda',
-            'Angostura bitters'
-          ],
-          instructions: [
-            'Add gin and lime juice to a highball glass filled with ice.',
-            'Top with ginger soda.',
-            'Add a few dashes of Angostura bitters.',
-            'Gently stir to combine.',
-            'Garnish with a lime wheel and candied ginger.'
-          ],
-          description: 'This fizzy refresher mixes gin and ginger for a light, sweet, bubbly drink.'
-        },
-        'blackberry-whiskey-sour': {
-          name: 'Blackberry Whiskey Sour',
-          ingredients: [
-            '1.5 oz Bourbon',
-            '3/4 oz Honey syrup',
-            '3/4 oz Lemon juice',
-            '1/4 oz Chambord (float)',
-            'Egg white',
-            'Blackberry shrub',
-            'Angostura bitters'
-          ],
-          instructions: [
-            'Add bourbon, honey syrup, lemon juice, blackberry shrub, and egg white to a shaker without ice and dry shake for 15 seconds.',
-            'Add ice and shake again until well-chilled.',
-            'Strain into a rocks glass over fresh ice.',
-            'Float Chambord on top.',
-            'Add a few dashes of Angostura bitters on the foam.',
-            'Garnish with fresh blackberries and a lemon twist.'
-          ],
-          description: 'This blackberry whiskey sour takes the classic cocktail to the next level with the addition of muddled blackberries and a float of Chambord.'
-        },
-        'honeysuckle': {
-          name: 'Honeysuckle',
-          ingredients: [
-            '2 oz White rum',
-            '3/4 oz Honey syrup',
-            '3/4 oz Lime juice',
-            'Lime wedge'
-          ],
-          instructions: [
-            'Add white rum, honey syrup, and lime juice to a shaker with ice.',
-            'Shake until well-chilled.',
-            'Strain into a chilled coupe glass.',
-            'Garnish with a lime wheel.'
-          ],
-          description: 'This summer cocktail combines the flavors of white rum and honey syrup with a hint of lime for a light, sweet drink.'
-        }
-      };
-      
+      }
+
+      // Load recipes from JSON file
+      let recipes = {};
+      fetch('recipes.json')
+        .then(response => response.json())
+        .then(data => {
+          recipes = data;
+          console.log('Recipes loaded successfully');
+        })
+        .catch(error => {
+          console.error('Error loading recipes:', error);
+          // Fallback in case the JSON file fails to load
+          recipes = {
+            'recipe-not-found': {
+              name: 'Recipe Not Found',
+              ingredients: ['Unable to load recipe data'],
+              instructions: ['Please try again later'],
+              description: 'We\'re having trouble accessing our recipe database.'
+            }
+          };
+        });
+
       // Open modal with recipe
       recipeButtons.forEach(button => {
         button.addEventListener('click', () => {
           const recipeId = button.getAttribute('data-cocktail');
-          const recipe = recipes[recipeId] || {
-            name: 'Recipe Coming Soon',
-            ingredients: ['Check back later for the complete recipe!'],
-            instructions: ['This recipe is currently being perfected.'],
-            description: 'We\'re still fine-tuning this delicious cocktail. Check back soon!'
-          };
-          
-          // Populate modal content
+
+          // Show loading indicator first
           modalContent.innerHTML = `
-            <h2>${recipe.name}</h2>
-            <div class="recipe-content">
-              <div class="recipe-description">${recipe.description}</div>
-              <div class="recipe-details">
-                <h3>Ingredients:</h3>
-                <ul>
-                  ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
-                </ul>
-                <h3>Instructions:</h3>
-                <ol>
-                  ${recipe.instructions.map(step => `<li>${step}</li>`).join('')}
-                </ol>
-              </div>
+            <div class="loading">
+              <div class="loading-spinner"></div>
+              <p>Loading recipe...</p>
             </div>
           `;
-          
-          // Show modal
+
+          // Show modal right away with loading spinner
           modal.classList.add('active');
+
+          // Wait a moment to ensure JSON is loaded
+          setTimeout(() => {
+            const recipe = recipes[recipeId] || {
+              name: 'Recipe Coming Soon',
+              ingredients: ['Check back later for the complete recipe!'],
+              instructions: ['This recipe is currently being perfected.'],
+              description: 'We\'re still fine-tuning this delicious cocktail. Check back soon!'
+            };
+
+            // Populate modal content
+            modalContent.innerHTML = `
+  <h2>${recipe.name}</h2>
+  <div class="recipe-content">
+    <div class="recipe-description">${recipe.description}</div>
+    <div class="recipe-details">
+      <h3>Ingredients:</h3>
+      <ul class="ingredients-list bullet-list">
+        ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+      </ul>
+      <h3>Instructions:</h3>
+      <ol class="instructions-list">
+        ${recipe.instructions.map(step => `<li>${step}</li>`).join('')}
+      </ol>
+    </div>
+  </div>
+`;
+          }, 300);
         });
       });
-      
+
       // Close modal
-      closeModal.addEventListener('click', () => {
-        modal.classList.remove('active');
-      });
-      
-      // Close modal when clicking outside content
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
+      if (closeModal) {
+        closeModal.addEventListener('click', () => {
           modal.classList.remove('active');
-        }
-      });
+        });
+      }
+
+      // Close modal when clicking outside content
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.remove('active');
+          }
+        });
+      }
     });
   </script>
 </body>
+
 </html>
