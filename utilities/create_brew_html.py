@@ -4,7 +4,7 @@ from textwrap import dedent
 
 def generate_brew_html(brew_id=None):
     """
-    Generate HTML for homebrew entries from brews.json
+    Generate HTML for homebrew entries from assets/brews.json
     
     Args:
         brew_id: Optional specific brew ID to generate. If None, generates all brews.
@@ -12,8 +12,8 @@ def generate_brew_html(brew_id=None):
     Returns:
         String with HTML for the brew card(s)
     """
-    # Load brews.json
-    json_path = "docs/brews.json"
+    # Load assets/brews.json
+    json_path = "docs/assets/brews.json"
 
     try:
         with open(json_path, 'r') as f:
@@ -25,7 +25,7 @@ def generate_brew_html(brew_id=None):
             
             brews = json.loads(cleaned_content)
     except Exception as e:
-        print(f"Error loading brews.json: {e}")
+        print(f"Error loading assets/brews.json: {e}")
         return None
     
     # Function to generate HTML for a single brew
@@ -79,7 +79,7 @@ def generate_brew_html(brew_id=None):
         if brew_id in brews:
             return generate_single_brew_html(brew_id, brews[brew_id])
         else:
-            print(f"Brew '{brew_id}' not found in brews.json")
+            print(f"Brew '{brew_id}' not found in assets/brews.json")
             return None
     else:
         # Generate HTML for all brews
@@ -124,7 +124,7 @@ def format_json_file(input_file, output_file=None):
 # Example usage
 if __name__ == "__main__":
     # First format the JSON file to ensure it's valid
-    format_json_file("docs/brews.json")
+    format_json_file("docs/assets/brews.json")
     
     # Generate HTML for all brews
     all_brews_html = generate_brew_html()

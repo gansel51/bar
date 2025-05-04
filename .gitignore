@@ -173,7 +173,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# output of generated drinks
-generated_single_drink.html
-generated_all_drinks.html
-generated_brews.html
+# output of generated html files
+generated_*.html

@@ -1,0 +1,357 @@
+{
+  "whiskey": {
+    "title": "Whiskey",
+    "categories": [
+      {
+        "name": "Bourbon",
+        "type": "whiskey bourbon",
+        "items": [
+          {
+            "name": "Elijah Craig Small Batch",
+            "notes": "94 Proof, Kentucky"
+          },
+          {
+            "name": "Larceny Barrel Proof",
+            "notes": "123.2 Proof, Kentucky"
+          },
+          {
+            "name": "Bardstown Bourbon Company Origin Series",
+            "notes": "Bottled in Bond, 100 Proof, Kentucky"
+          }
+        ]
+      },
+      {
+        "name": "Rye",
+        "type": "whiskey rye",
+        "items": [
+          {
+            "name": "Rittenhouse Rye",
+            "notes": "Bottled in Bond, 100 Proof, Kentucky"
+          },
+          {
+            "name": "Bardstown Bourbon Company Origin Series Rye",
+            "notes": "96 Proof, Kentucky"
+          }
+        ]
+      },
+      {
+        "name": "Japanese",
+        "type": "whiskey japanese",
+        "items": [
+          {
+            "name": "Nikka Whisky from the Barrel",
+            "notes": "102.8 Proof, Japan"
+          },
+          {
+            "name": "Hibiki Suntory Japanese Harmony",
+            "notes": "86 Proof, Japan"
+          }
+        ]
+      },
+      {
+        "name": "Scotch",
+        "type": "whiskey scotch",
+        "items": [
+          {
+            "name": "The Glenlivet 12",
+            "notes": "Single Malt, 80 Proof, Speyside"
+          },
+          {
+            "name": "Bunnahabhain Cruach-Mhona",
+            "notes": "Single Malt, 100 Proof, Islay"
+          },
+          {
+            "name": "Lagavulin 16",
+            "notes": "Single Malt, 86 Proof, Islay"
+          }
+        ]
+      },
+      {
+        "name": "Irish",
+        "type": "whiskey irish",
+        "items": [
+          {
+            "name": "Jameson Irish Whiskey",
+            "notes": "80 Proof, Ireland"
+          }
+        ]
+      }
+    ]
+  },
+  "gin": {
+    "title": "Gin",
+    "categories": [
+      {
+        "name": "London Dry",
+        "type": "gin london",
+        "items": [
+          {
+            "name": "Beefeater London Dry",
+            "notes": "94 Proof, England"
+          }
+        ]
+      }
+    ]
+  },
+  "rum": {
+    "title": "Rum",
+    "categories": [
+      {
+        "name": "Light",
+        "type": "rum light",
+        "items": [
+          {
+            "name": "Flor de Ca\u00f1a 4 Year Extra Seco",
+            "notes": "80 Proof, Nicaragua"
+          }
+        ]
+      },
+      {
+        "name": "Dark",
+        "type": "rum dark",
+        "items": [
+          {
+            "name": "Bumbu XO",
+            "notes": "80 Proof, Panama"
+          }
+        ]
+      },
+      {
+        "name": "Cuban",
+        "type": "rum cuban",
+        "items": [
+          {
+            "name": "Havana Club Especial",
+            "notes": "80 Proof, Cuba"
+          },
+          {
+            "name": "Havana Club 7 Year",
+            "notes": "80 Proof, Cuba"
+          },
+          {
+            "name": "Ron La Progresiva 13 Year",
+            "notes": "94 Proof, Cuba"
+          }
+        ]
+      }
+    ]
+  },
+  "tequila-mezcal": {
+    "title": "Tequila and Mezcal",
+    "categories": [
+      {
+        "name": "Tequila",
+        "type": "tequila-mezcal tequila",
+        "items": [
+          {
+            "name": "Espolon Reposado",
+            "notes": "80 Proof, Jalisco, Mexico"
+          },
+          {
+            "name": "La Gritona Reposado",
+            "notes": "86 Proof, Valle de Guadalupe, Mexico"
+          }
+        ]
+      },
+      {
+        "name": "Mezcal",
+        "type": "tequila-mezcal mezcal",
+        "items": [
+          {
+            "name": "Del Maguey Vida Pueblo",
+            "notes": "84 Proof, Oaxaca, Mexico"
+          },
+          {
+            "name": "Del Maguey Vida Clasico",
+            "notes": "90 Proof, Oaxaca, Mexico"
+          },
+          {
+            "name": "Nuestra Soledad Lachigui",
+            "notes": "90 Proof, Oaxaca, Mexico"
+          },
+          {
+            "name": "El Jolgorio Arroque\u00f1o",
+            "notes": "98 Proof, Oaxaca, Mexico"
+          },
+          {
+            "name": "El Jolgorio Tobasiche",
+            "notes": "94 Proof, Oaxaca, Mexico"
+          }
+        ]
+      },
+      {
+        "name": "Sotol",
+        "type": "tequila-mezcal sotol",
+        "items": [
+          {
+            "name": "Sotol La Higuera",
+            "notes": "86 Proof, Chihuahua, Mexico"
+          }
+        ]
+      }
+    ]
+  },
+  "other": {
+    "title": "Other Spirits",
+    "categories": [
+      {
+        "name": "Amaro",
+        "type": "other amaro",
+        "items": [
+          {
+            "name": "Meletti",
+            "notes": "64 Proof, Italy"
+          },
+          {
+            "name": "Amaro Nonnino",
+            "notes": "70 Proof, Italy"
+          },
+          {
+            "name": "Amaro Sfumato",
+            "notes": "80 Proof, Italy"
+          },
+          {
+            "name": "Branca Menta",
+            "notes": "60 Proof, Italy"
+          }
+        ]
+      },
+      {
+        "name": "Cognac",
+        "type": "other cognac",
+        "items": [
+          {
+            "name": "Villon",
+            "notes": "80 Proof, France"
+          }
+        ]
+      },
+      {
+        "name": "Vodka",
+        "type": "other vodka",
+        "items": [
+          {
+            "name": "Skyy Vodka",
+            "notes": "80 Proof, San Francisco, USA"
+          }
+        ]
+      },
+      {
+        "name": "Cordials",
+        "type": "other cordials",
+        "items": [
+          {
+            "name": "Chambord",
+            "notes": "Black Raspberry Liqueur, 33 Proof, France"
+          },
+          {
+            "name": "Cointreau",
+            "notes": "Orange Liqueur, 80 Proof, France"
+          },
+          {
+            "name": "Aperol",
+            "notes": "Aperitif, 22 Proof, Italy"
+          },
+          {
+            "name": "Kahlua",
+            "notes": "Coffee Liqueur, 40 Proof, Mexico"
+          },
+          {
+            "name": "Batavia Arrack",
+            "notes": "100 Proof, Indonesia"
+          },
+          {
+            "name": "Marie Brizzard No. 33 White Mint",
+            "notes": "60 Proof, France"
+          },
+          {
+            "name": "Underberg",
+            "notes": "Digestif, 88 Proof, Germany"
+          },
+          {
+            "name": "Giffard Cacao",
+            "notes": "Chocolate Liqueur, 50 Proof, France"
+          }
+        ]
+      },
+      {
+        "name": "Sherry and Vermouth",
+        "type": "other fortified",
+        "items": [
+          {
+            "name": "East India Lusteau Solera Sherry",
+            "notes": "40 Proof, Spain"
+          },
+          {
+            "name": "Dolin Sweet Red Vermouth",
+            "notes": "32 Proof, France"
+          },
+          {
+            "name": "Dolin Dry Vermouth",
+            "notes": "35 Proof, France"
+          }
+        ]
+      },
+      {
+        "name": "Bitters",
+        "type": "other bitters",
+        "items": [
+          {
+            "name": "Angostura",
+            "notes": "Aromatic Bitters, Trinidad & Tobago"
+          },
+          {
+            "name": "Angostura Orange",
+            "notes": "Orange Bitters, Trinidad & Tobago"
+          },
+          {
+            "name": "Bittermen's Hellfire",
+            "notes": "Habanero Shrub, USA"
+          },
+          {
+            "name": "The Bitter Truth Chocolate Bitters",
+            "notes": "Germany"
+          },
+          {
+            "name": "Strongwater Cherry Bitters",
+            "notes": "USA"
+          },
+          {
+            "name": "Strongwater Orange Bitters",
+            "notes": "USA"
+          },
+          {
+            "name": "Strongwater Golden Bitters",
+            "notes": "USA"
+          },
+          {
+            "name": "Strongwater Virtue Bitters",
+            "notes": "USA"
+          },
+          {
+            "name": "Strongwater Floral Bitters",
+            "notes": "USA"
+          }
+        ]
+      },
+      {
+        "name": "Syrups",
+        "type": "other syrups",
+        "items": [
+          {
+            "name": "Agave Syrup",
+            "notes": "Natural Sweetener"
+          },
+          {
+            "name": "Simple Syrup",
+            "notes": "Housemade"
+          },
+          {
+            "name": "Grenadine",
+            "notes": "Pomegranate Syrup, Housemade"
+          }
+        ]
+      }
+    ]
+  }
+}

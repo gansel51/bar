@@ -148,7 +148,7 @@
       
       // Load brews data from JSON file
       let brews = {};
-      fetch('brews.json')
+      fetch('assets/brews.json')
         .then(response => response.json())
         .then(data => {
           brews = data;
@@ -170,7 +170,6 @@
               ingredients: ['Unable to load brew data'],
               process: ['Please try again later'],
               description: 'We\'re having trouble accessing our brew database.',
-              pairings: ['Check back later']
             }
           };
         });
@@ -205,7 +204,6 @@
               ingredients: ['Check back later for the complete recipe!'],
               process: ['This brew process is currently being documented.'],
               description: 'We\'re still fine-tuning this delicious brew. Check back soon!',
-              pairings: ['Works well with most foods']
             };
             
             // Populate modal content
@@ -248,13 +246,6 @@
                 <ol class="instructions-list">
                   ${brew.process.map(step => `<li>${step}</li>`).join('')}
                 </ol>
-              </div>
-              
-              <div class="brew-details-section">
-                <h3>Food Pairings:</h3>
-                <ul class="bullet-list">
-                  ${brew.pairings.map(pairing => `<li>${pairing}</li>`).join('')}
-                </ul>
               </div>
             `;
           }, 300);

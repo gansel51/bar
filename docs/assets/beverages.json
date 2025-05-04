@@ -1,0 +1,98 @@
+{
+  "beer": {
+    "title": "Beer",
+    "categories": [
+      {
+        "name": "Mexican",
+        "type": "beer mexican",
+        "items": [
+          {
+            "name": "Estrella Jalisco",
+            "notes": "Light Lager, 4.5% ABV"
+          }
+        ]
+      },
+      {
+        "name": "American Mega Brand",
+        "type": "beer american megabrand",
+        "items": [
+          {
+            "name": "Kona Big Wave",
+            "notes": "Golden Ale, 4.4% ABV, Hawaii"
+          }
+        ]
+      },
+      {
+        "name": "American Craft",
+        "type": "beer american craft",
+        "items": [
+          {
+            "name": "Wicked Weed Imperial Perni Haze",
+            "notes": "Imperial IPA, 8.5% ABV, Wicked Weed Brewing Co., North Carolina"
+          },
+          {
+            "name": "Coastal Love",
+            "notes": "Hazy IPA, 6.3% ABV, Wicked Weed Brewing Co., North Carolina"
+          },
+          {
+            "name": "Hazy Ripper",
+            "notes": "New England IPA, 6.8% ABV, Treehouse Brewing Co., Massachusetts"
+          },
+          {
+            "name": "Bbbrighttt Citra",
+            "notes": "Double IPA, 8.2% ABV, Treehouse Brewing Co., Massachusetts"
+          },
+          {
+            "name": "Pliny The Younger",
+            "notes": "Triple IPA, 10.25% ABV, Russian River Brewing Co., California"
+          }
+        ]
+      },
+      {
+        "name": "Made in House",
+        "type": "beer american craft",
+        "custom_html": "<p>Check out our <a href=\"homebrew.html\">Homebrew page</a> to see what's brewing in Chelsea!</p>"
+      }
+    ]
+  },
+  "cider": {
+    "title": "Cider",
+    "categories": [
+      {
+        "name": "Craft",
+        "type": "cider craft",
+        "items": [
+          {
+            "name": "Downeast Winter Blend",
+            "notes": "5.1% ABV, Massachusetts"
+          }
+        ]
+      },
+      {
+        "name": "Mega Brand",
+        "type": "cider megabrand",
+        "items": [
+          {
+            "name": "Angry Orchard Crisp Apple",
+            "notes": "5.0% ABV, New York"
+          }
+        ]
+      }
+    ]
+  },
+  "rtd": {
+    "title": "Ready-to-Drink",
+    "categories": [
+      {
+        "name": "Cocktails",
+        "type": "rtd cocktails",
+        "items": [
+          {
+            "name": "Cutwater Espresso Martini",
+            "notes": "12.5% ABV, California"
+          }
+        ]
+      }
+    ]
+  }
+}

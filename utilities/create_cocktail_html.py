@@ -4,7 +4,7 @@ from textwrap import dedent
 
 def generate_cocktail_html(cocktail_name):
     """
-    Generate HTML for a cocktail card based on cocktail name in recipes.json
+    Generate HTML for a cocktail card based on cocktail name in assets/recipes.json
     
     Args:
         cocktail_name: The name of the cocktail (e.g. "manhattan", "gin-fizz")
@@ -12,19 +12,19 @@ def generate_cocktail_html(cocktail_name):
     Returns:
         String with HTML for the cocktail card
     """
-    # Load recipes.json
-    json_path = "docs/recipes.json"
+    # Load assets/recipes.json
+    json_path = "docs/assets/recipes.json"
 
     try:
         with open(json_path, 'r') as f:
             recipes = json.load(f)
     except Exception as e:
-        print(f"Error loading recipes.json: {e}")
+        print(f"Error loading assets/recipes.json: {e}")
         return None
     
     # Check if cocktail exists
     if cocktail_name not in recipes:
-        print(f"Cocktail '{cocktail_name}' not found in recipes.json")
+        print(f"Cocktail '{cocktail_name}' not found in assets/recipes.json")
         return None
     
     # Get recipe data
@@ -150,13 +150,13 @@ def format_json_file(input_file, output_file=None):
 
 def generate_all_cocktail_html():
     """
-    Generate HTML for all cocktails in recipes.json
+    Generate HTML for all cocktails in assets/recipes.json
     
     Returns:
         String with HTML for all cocktail cards
     """
-    # Load recipes.json
-    json_path = "docs/recipes.json"
+    # Load assets/recipes.json
+    json_path = "docs/assets/recipes.json"
     
     # Format the JSON file first
     format_json_file(json_path)
@@ -165,7 +165,7 @@ def generate_all_cocktail_html():
         with open(json_path, 'r') as f:
             recipes = json.load(f)
     except Exception as e:
-        print(f"Error loading recipes.json: {e}")
+        print(f"Error loading assets/recipes.json: {e}")
         return None
     
     # Generate HTML for each cocktail
@@ -181,7 +181,7 @@ def generate_all_cocktail_html():
 # Example usage:
 if __name__ == "__main__":
     # Format the JSON file first
-    format_json_file("docs/recipes.json")
+    format_json_file("docs/assets/recipes.json")
     
     # Generate HTML for a single cocktail
     cocktail_input = "martini"

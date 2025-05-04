@@ -291,7 +291,7 @@
 
       // Load recipes from JSON file
       let recipes = {};
-      fetch('recipes.json')
+      fetch('assets/recipes.json')
         .then(response => response.json())
         .then(data => {
           recipes = data;
