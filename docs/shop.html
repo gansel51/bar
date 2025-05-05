@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping List - The Tipsy Griffin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</head>
+<body>
+  <header id="main-header">
+    <img src="images/logo-seal.png" alt="The Tipsy Griffin" class="seal-logo">
+    <nav>
+      <a href="index.html">Bar Menu</a> 
+      <a href="beer.html">Beer and Wine</a>
+      <a href="classics.html">Classic Cocktails</a>
+      <a href="seasonal.html">Seasonal Cocktails</a>
+      <a href="spirits.html">Spirits List</a>
+      <a href="homebrew.html">Homebrewing</a>
+      <a href="shop.html" class="active">Shopping List</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Shopping List</h1>
+      
+      <div class="search-bar">
+        <input type="text" class="search-input" id="shopping-search" placeholder="Search items...">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="whiskey">Whiskey</button>
+        <button class="filter-btn" data-filter="cordials">Cordials</button>
+        <button class="filter-btn" data-filter="tequila-mezcal">Agave</button>
+        <button class="filter-btn" data-filter="other">Other</button>
+      </div>
+
+      <section class="spirits-category">
+        <h2>Low Stock Items</h2>
+      
+        <div class="beverage-item" data-type="whiskey bourbon">
+          <h3>Bourbon</h3>
+          <ul>
+            <li>Bardstown Bourbon Company Origin Series <span class="beverage-notes">Bottled in Bond, 100 Proof, Kentucky</span> <span class="stock-level" style="color: var(--accent-color); font-weight: bold;">Very Low</span></li>
+          </ul>
+        </div>
+      
+        <div class="beverage-item" data-type="tequila-mezcal sotol">
+          <h3>Sotol</h3>
+          <ul>
+            <li>Sotol La Higuera <span class="beverage-notes">86 Proof, Chihuahua, Mexico</span> <span class="stock-level" style="color: var(--accent-color); font-weight: bold;">Almost Empty</span></li>
+          </ul>
+        </div>
+      
+        <div class="beverage-item" data-type="cordials">
+          <h3>Cordials</h3>
+          <ul>
+            <li>Cointreau <span class="beverage-notes">Orange Liqueur, 80 Proof, France</span> <span class="stock-level" style="color: var(--accent-color); font-weight: bold;">Low</span></li>
+          </ul>
+        </div>
+      
+        <!-- <div class="beverage-item" data-type="other syrups">
+          <h3>Syrups</h3>
+          <ul>
+            <li>Grenadine <span class="beverage-notes">Pomegranate Syrup, Housemade</span> <span class="stock-level" style="color: var(--accent-color); font-weight: bold;">Low</span></li>
+          </ul>
+        </div> -->
+      
+        <!-- <div class="beverage-item" data-type="other bitters">
+          <h3>Bitters</h3>
+          <ul>
+            <li>Strongwater Orange Bitters <span class="beverage-notes">USA</span> <span class="stock-level" style="color: var(--accent-color); font-weight: bold;">Very Low</span></li>
+          </ul>
+        </div> -->
+      </section>
+
+      <section class="library-stats">
+        <h2>Shopping Summary</h2>
+        <div class="stats-container">
+          <div class="stat-card">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="stat-number">3</div>
+            <div class="stat-label">Items to Buy</div>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div class="stat-number">2</div>
+            <div class="stat-label">Critical Items</div>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-calendar-day"></i>
+            <div class="stat-number">May 7</div>
+            <div class="stat-label">Next Order Date</div>
+          </div>
+        </div>
+        <p class="stats-note">Items marked as "Very Low" or "Almost Empty" should be prioritized in your next order.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Griffin Ansel | The Tipsy Griffin</p>
+        <p class="disclaimer">Please drink responsibly.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const beverages = document.querySelectorAll('.beverage-item');
+      const searchInput = document.getElementById('shopping-search');
+      
+      // Filter buttons click event
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to clicked button
+          button.classList.add('active');
+          
+          const filter = button.getAttribute('data-filter');
+          
+          // Show/hide beverages based on filter
+          beverages.forEach(beverage => {
+            if (filter === 'all') {
+              beverage.style.display = 'block';
+            } else {
+              if (beverage.getAttribute('data-type').includes(filter)) {
+                beverage.style.display = 'block';
+              } else {
+                beverage.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+      
+      // Search functionality
+      searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        
+        beverages.forEach(beverage => {
+          const beverageText = beverage.textContent.toLowerCase();
+          
+          if (beverageText.includes(searchTerm)) {
+            beverage.style.display = 'block';
+          } else {
+            beverage.style.display = 'none';
+          }
+        });
+      });
+
+      // Add "Add to Order List" button functionality
+      const addButtons = document.querySelectorAll('.add-to-order');
+      
+      addButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Change text to "Added" and disable button
+          button.textContent = "Added ✓";
+          button.classList.add('added');
+          button.disabled = true;
+          
+          // Could connect to a backend to add items to an actual order
+          // For demo purposes, just shows the button state change
+        });
+      });
+    });
+  </script>
+</body>
+</html>
