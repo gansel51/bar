@@ -86,5 +86,20 @@
         ]
       }
     ]
+  },
+  "wine": {
+    "title": "Wine",
+    "categories": [
+      {
+        "name": "Red",
+        "type": "wine",
+        "items": [
+          {
+            "name": "2019 Clos Puy Arnaud",
+            "notes": "14% ABV, Bordeaux"
+          }
+        ]
+      }
+    ]
   }
 }

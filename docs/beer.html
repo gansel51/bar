@@ -25,9 +25,11 @@
     <div class="container">
       <h1>Beer and Wine List</h1>
       
-      <div class="search-bar">
-        <input type="text" class="search-input" id="beverage-search" placeholder="Search beverages...">
-        <button class="search-btn"><i class="fas fa-search"></i></button>
+      <div class="search-container">
+        <div class="search-bar">
+          <input type="text" class="search-input" id="cocktail-search" placeholder="Search drinks...">
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
       </div>
       
       <div class="filter-controls">
@@ -35,6 +37,7 @@
         <button class="filter-btn" data-filter="beer">Beer</button>
         <button class="filter-btn" data-filter="cider">Cider</button>
         <button class="filter-btn" data-filter="rtd">Ready to Drink</button>
+        <button class="filter-btn" data-filter="wine">Wine</button>
       </div>
 
       <section class="spirits-category">
@@ -59,7 +62,8 @@
           <ul>
             <li>Wicked Weed Imperial Perni Haze <span class="beverage-notes">Imperial IPA, 8.5% ABV, Wicked Weed Brewing Co.,
                 North Carolina</span></li>
-            <li>Coastal Love <span class="beverage-notes">Hazy IPA, 6.3% ABV, Wicked Weed Brewing Co., North Carolina</span></li>
+            <li>Coastal Love <span class="beverage-notes">Hazy IPA, 6.3% ABV, Wicked Weed Brewing Co., North Carolina</span>
+            </li>
             <li>Pliny The Younger <span class="beverage-notes">Triple IPA, 10.25% ABV, Russian River Brewing Co.,
                 California</span></li>
           </ul>
@@ -92,6 +96,15 @@
           <h3>Cocktails</h3>
           <ul>
             <li>Cutwater Espresso Martini <span class="beverage-notes">12.5% ABV, California</span></li>
+          </ul>
+        </div>
+      
+        <h2>Red</h2>
+      
+        <div class="beverage-item" data-type="wine">
+          <h3>Wine</h3>
+          <ul>
+            <li>2019 Clos Puy Arnaud <span class="beverage-notes">14% ABV, Bordeaux</span></li>
           </ul>
         </div>
       </section>
