@@ -1,6 +1,7 @@
 import json
-import os
 from textwrap import dedent
+
+from utils import format_json_file
 
 def generate_cocktail_html(cocktail_name):
     """
@@ -113,39 +114,6 @@ def generate_cocktail_html(cocktail_name):
         </div>''')
     
     return html
-
-
-def format_json_file(input_file, output_file=None):
-    """
-    Format a JSON file with proper indentation and structure
-    
-    Args:
-        input_file: Path to the input JSON file
-        output_file: Path to the output JSON file (defaults to same as input)
-    """
-    if output_file is None:
-        output_file = input_file
-        
-    try:
-        with open(input_file, 'r') as f:
-            # Remove any potential JavaScript comments that make the JSON invalid
-            content = f.read()
-            lines = content.splitlines()
-            cleaned_lines = [line for line in lines if not line.strip().startswith('//')]
-            cleaned_content = '\n'.join(cleaned_lines)
-            
-            # Parse the cleaned JSON
-            data = json.loads(cleaned_content)
-        
-        # Write the formatted JSON
-        with open(output_file, 'w') as f:
-            json.dump(data, f, indent=2, sort_keys=False)
-            
-        print(f"JSON file formatted successfully: {output_file}")
-        return True
-    except Exception as e:
-        print(f"Error formatting JSON file: {e}")
-        return False
 
 
 def generate_all_cocktail_html():

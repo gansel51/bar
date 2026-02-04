@@ -430,5 +430,276 @@
       "Garnish with a lime wheel."
     ],
     "description": "This summer cocktail combines the flavors of white rum and honey syrup with a hint of lime for a light, sweet drink."
+  },
+  "paper-plane": {
+    "name": "Paper Plane",
+    "ingredients": [
+      "3/4 oz Bourbon",
+      "3/4 oz Aperol",
+      "3/4 oz Amaro Nonnino",
+      "3/4 oz Fresh lemon juice"
+    ],
+    "instructions": [
+      "Add all ingredients to a shaker with ice.",
+      "Shake until well-chilled.",
+      "Double strain into a chilled coupe glass.",
+      "No garnish needed."
+    ],
+    "description": "A modern classic created by Sam Ross at Milk & Honey in 2008. The equal-parts formula balances bourbon's warmth with Aperol's bitterness, Amaro Nonnino's herbal complexity, and bright citrus."
+  },
+  "paloma": {
+    "name": "Paloma",
+    "ingredients": [
+      "2 oz Tequila",
+      "1/2 oz Fresh lime juice",
+      "Grapefruit soda (Jarritos or Squirt)",
+      "Pinch of salt",
+      "Lime wheel for garnish"
+    ],
+    "instructions": [
+      "Add tequila, lime juice, and a pinch of salt to a highball glass filled with ice.",
+      "Top with grapefruit soda and stir gently.",
+      "Garnish with a lime wheel."
+    ],
+    "description": "Mexico's most popular tequila cocktail, even more so than the Margarita. The Paloma is refreshing, effervescent, and perfectly balanced between sweet, tart, and bitter grapefruit notes."
+  },
+  "penicillin": {
+    "name": "Penicillin",
+    "ingredients": [
+      "2 oz Blended Scotch",
+      "3/4 oz Fresh lemon juice",
+      "3/4 oz Honey-ginger syrup",
+      "1/4 oz Islay Scotch (Lagavulin) float",
+      "Candied ginger for garnish"
+    ],
+    "instructions": [
+      "Add blended Scotch, lemon juice, and honey-ginger syrup to a shaker with ice.",
+      "Shake until well-chilled.",
+      "Strain into a rocks glass over fresh ice.",
+      "Float the Islay Scotch on top by pouring over the back of a spoon.",
+      "Garnish with candied ginger."
+    ],
+    "description": "Created by Sam Ross at Milk & Honey in 2005, this modern classic combines the soothing elements of a hot toddy with a smoky Scotch float. The honey-ginger syrup is made by simmering equal parts honey and water with fresh ginger."
+  },
+  "sidecar": {
+    "name": "Sidecar",
+    "ingredients": [
+      "2 oz Cognac",
+      "3/4 oz Cointreau",
+      "3/4 oz Fresh lemon juice",
+      "Sugar rim (optional)",
+      "Orange twist for garnish"
+    ],
+    "instructions": [
+      "Optionally rim a coupe glass with sugar.",
+      "Add cognac, Cointreau, and lemon juice to a shaker with ice.",
+      "Shake until well-chilled.",
+      "Strain into the prepared glass.",
+      "Garnish with an orange twist."
+    ],
+    "description": "A Prohibition-era classic that likely originated in Paris. The Sidecar showcases cognac's warmth balanced by orange liqueur and bright citrus, creating an elegant and timeless cocktail."
+  },
+  "white-russian": {
+    "name": "White Russian",
+    "ingredients": [
+      "2 oz Vodka",
+      "1 oz Kahlua",
+      "1 oz Heavy cream",
+      "Coffee beans for garnish (optional)"
+    ],
+    "instructions": [
+      "Fill a rocks glass with ice.",
+      "Add vodka and Kahlua, then stir.",
+      "Float the heavy cream on top by pouring over the back of a spoon.",
+      "Optionally garnish with a few coffee beans."
+    ],
+    "description": "A decadent, dessert-like cocktail that gained cult status after The Big Lebowski. The Dude's drink of choice combines vodka and coffee liqueur with a creamy float."
+  },
+  "cosmopolitan": {
+    "name": "Cosmopolitan",
+    "ingredients": [
+      "1.5 oz Vodka",
+      "1 oz Cointreau",
+      "1/2 oz Fresh lime juice",
+      "1/2 oz Cranberry juice",
+      "Orange twist for garnish"
+    ],
+    "instructions": [
+      "Add all ingredients to a shaker with ice.",
+      "Shake until well-chilled.",
+      "Strain into a chilled martini glass.",
+      "Garnish with an orange twist, flamed if desired."
+    ],
+    "description": "The iconic 1990s cocktail popularized by Sex and the City. Toby Cecchini's version from The Odeon balances citrus vodka with Cointreau, lime, and just enough cranberry for color and tartness."
+  },
+  "lemon-drop": {
+    "name": "Lemon Drop",
+    "ingredients": [
+      "2 oz Vodka",
+      "3/4 oz Cointreau",
+      "1 oz Fresh lemon juice",
+      "1/2 oz Simple syrup",
+      "Sugar rim",
+      "Lemon twist for garnish"
+    ],
+    "instructions": [
+      "Rim a chilled martini glass with sugar.",
+      "Add vodka, Cointreau, lemon juice, and simple syrup to a shaker with ice.",
+      "Shake until well-chilled.",
+      "Strain into the prepared glass.",
+      "Garnish with a lemon twist."
+    ],
+    "description": "A sweet-tart vodka cocktail that tastes like grown-up lemonade. Created in the 1970s in San Francisco, it's refreshing, citrus-forward, and dangerously easy to drink."
+  },
+  "amaro-sour": {
+    "name": "Amaro Sour",
+    "ingredients": [
+      "2 oz Amaro (Nonnino, Meletti, or Sfumato)",
+      "1 oz Fresh lemon juice",
+      "3/4 oz Simple syrup",
+      "Egg white",
+      "Angostura bitters",
+      "Lemon wheel for garnish"
+    ],
+    "instructions": [
+      "Add amaro, lemon juice, simple syrup, and egg white to a shaker without ice.",
+      "Dry shake vigorously for 15 seconds.",
+      "Add ice and shake again until well-chilled.",
+      "Strain into a rocks glass over fresh ice.",
+      "Add a few dashes of Angostura bitters on the foam.",
+      "Garnish with a lemon wheel."
+    ],
+    "description": "A versatile sour template that works with any amaro. The herbal bitterness of the amaro shines through the citrus and egg white foam, creating a complex yet approachable cocktail."
+  },
+  "last-word": {
+    "name": "Last Word",
+    "ingredients": [
+      "3/4 oz Gin",
+      "3/4 oz Green Chartreuse",
+      "3/4 oz Maraschino liqueur",
+      "3/4 oz Fresh lime juice"
+    ],
+    "instructions": [
+      "Add all ingredients to a shaker with ice.",
+      "Shake until well-chilled.",
+      "Double strain into a chilled coupe glass.",
+      "No garnish needed."
+    ],
+    "description": "A Prohibition-era classic from the Detroit Athletic Club, rediscovered by Murray Stenson at Zig Zag Cafe in Seattle. The equal-parts formula creates a perfectly balanced herbal, sweet, and citrus-forward cocktail."
+  },
+  "sfumato-last-word": {
+    "name": "Sfumato Last Word",
+    "ingredients": [
+      "3/4 oz Gin",
+      "3/4 oz Amaro Sfumato",
+      "3/4 oz Cointreau",
+      "3/4 oz Fresh lime juice"
+    ],
+    "instructions": [
+      "Add all ingredients to a shaker with ice.",
+      "Shake until well-chilled.",
+      "Double strain into a chilled coupe glass.",
+      "No garnish needed."
+    ],
+    "description": "A smoky riff on the Last Word that swaps Green Chartreuse for Amaro Sfumato's rabarbaro (rhubarb) and smoke character, and uses Cointreau in place of maraschino. Bitter, citrusy, and complex."
+  },
+  "mezcal-mule": {
+    "name": "Mezcal Mule",
+    "ingredients": [
+      "2 oz Mezcal",
+      "1/2 oz Fresh lime juice",
+      "4 oz Ginger beer",
+      "Lime wheel for garnish"
+    ],
+    "instructions": [
+      "Fill a copper mug or highball glass with ice.",
+      "Add mezcal and lime juice.",
+      "Top with ginger beer and stir gently.",
+      "Garnish with a lime wheel."
+    ],
+    "description": "A smoky twist on the Moscow Mule that swaps vodka for mezcal. The ginger beer's spice complements mezcal's earthy smoke, creating a refreshing and complex highball."
+  },
+  "el-presidente": {
+    "name": "El Presidente",
+    "ingredients": [
+      "1.5 oz White rum",
+      "3/4 oz Dry vermouth",
+      "1/2 oz Cointreau",
+      "1 barspoon Grenadine",
+      "Orange twist for garnish"
+    ],
+    "instructions": [
+      "Add all ingredients to a mixing glass with ice.",
+      "Stir until well-chilled, about 30 seconds.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with an orange twist."
+    ],
+    "description": "A Cuban classic from the 1920s, named after President Gerardo Machado. This elegant stirred cocktail showcases rum's versatility with vermouth, orange liqueur, and a touch of grenadine for color and sweetness."
+  },
+  "gimlet": {
+    "name": "Gimlet",
+    "ingredients": [
+      "2.5 oz Gin",
+      "3/4 oz Fresh lime juice",
+      "3/4 oz Simple syrup",
+      "Lime wheel for garnish"
+    ],
+    "instructions": [
+      "Add gin, lime juice, and simple syrup to a shaker with ice.",
+      "Shake until well-chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a lime wheel."
+    ],
+    "description": "A tart, refreshing classic that dates back to British naval officers mixing gin with lime cordial to prevent scurvy. The modern version uses fresh lime and simple syrup for a cleaner, brighter flavor."
+  },
+  "black-manhattan": {
+    "name": "Black Manhattan",
+    "ingredients": [
+      "2 oz Rye or Bourbon",
+      "1 oz Amaro (Averna traditional, or Nonnino/Meletti)",
+      "2 dashes Angostura bitters",
+      "1 dash Orange bitters",
+      "Brandied cherry for garnish"
+    ],
+    "instructions": [
+      "Add all ingredients to a mixing glass with ice.",
+      "Stir until well-chilled, about 30 seconds.",
+      "Strain into a chilled coupe or rocks glass.",
+      "Garnish with a brandied cherry."
+    ],
+    "description": "A modern classic created by Todd Smith in San Francisco, swapping sweet vermouth for amaro. The result is darker, more bitter, and herbally complex than a traditional Manhattan."
+  },
+  "rob-roy": {
+    "name": "Rob Roy",
+    "ingredients": [
+      "2 oz Scotch whisky",
+      "1 oz Sweet vermouth",
+      "2 dashes Angostura bitters",
+      "Brandied cherry for garnish"
+    ],
+    "instructions": [
+      "Add all ingredients to a mixing glass with ice.",
+      "Stir until well-chilled, about 30 seconds.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a brandied cherry."
+    ],
+    "description": "Essentially a Manhattan made with Scotch, the Rob Roy was created in 1894 at the Waldorf Astoria to honor the premiere of an operetta about Scottish folk hero Rob Roy MacGregor. Use a quality blended Scotch for best results."
+  },
+  "white-lady": {
+    "name": "White Lady",
+    "ingredients": [
+      "2 oz Gin",
+      "3/4 oz Cointreau",
+      "3/4 oz Fresh lemon juice",
+      "Egg white (optional)",
+      "Lemon twist for garnish"
+    ],
+    "instructions": [
+      "If using egg white, add all ingredients to a shaker without ice and dry shake for 15 seconds.",
+      "Add ice and shake until well-chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a lemon twist."
+    ],
+    "description": "A Prohibition-era classic refined by Harry MacElhone at Harry's New York Bar in Paris. The White Lady is essentially a gin sour elevated by Cointreau, with optional egg white for a silky texture."
   }
 }
