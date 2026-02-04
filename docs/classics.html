@@ -30,7 +30,7 @@
       <div class="search-container">
         <div class="search-bar">
           <input type="text" class="search-input" id="cocktail-search" placeholder="Search cocktails...">
-          <button class="search-btn"><i class="fas fa-search"></i></button>
+          <button class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
         </div>
       </div>
 
@@ -529,6 +529,7 @@
 
         <!-- Cocktail list -->
 
+      </section>
   </main>
 
   <!-- Recipe Modal -->
@@ -619,7 +620,6 @@
         .then(response => response.json())
         .then(data => {
           recipes = data;
-          console.log('Recipes loaded successfully');
         })
         .catch(error => {
           console.error('Error loading recipes:', error);

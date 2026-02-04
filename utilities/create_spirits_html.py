@@ -1,6 +1,7 @@
 import json
-import os
 from textwrap import dedent
+
+from utils import format_json_file, load_json_file
 
 def generate_spirits_html():
     """
@@ -12,17 +13,8 @@ def generate_spirits_html():
     # Load spirits.json
     json_path = "docs/assets/spirits.json"
 
-    try:
-        with open(json_path, 'r') as f:
-            # Remove any potential JavaScript comments
-            content = f.read()
-            lines = content.splitlines()
-            cleaned_lines = [line for line in lines if not line.strip().startswith('//')]
-            cleaned_content = '\n'.join(cleaned_lines)
-            
-            spirits = json.loads(cleaned_content)
-    except Exception as e:
-        print(f"Error loading spirits.json: {e}")
+    spirits = load_json_file(json_path)
+    if spirits is None:
         return None
     
     # Generate HTML for all spirit types
@@ -64,37 +56,6 @@ def generate_spirits_html():
     
     return full_html
 
-def format_json_file(input_file, output_file=None):
-    """
-    Format a JSON file with proper indentation and structure
-    
-    Args:
-        input_file: Path to the input JSON file
-        output_file: Path to the output JSON file (defaults to same as input)
-    """
-    if output_file is None:
-        output_file = input_file
-        
-    try:
-        with open(input_file, 'r') as f:
-            # Remove any potential JavaScript comments that make the JSON invalid
-            content = f.read()
-            lines = content.splitlines()
-            cleaned_lines = [line for line in lines if not line.strip().startswith('//')]
-            cleaned_content = '\n'.join(cleaned_lines)
-            
-            # Parse the cleaned JSON
-            data = json.loads(cleaned_content)
-        
-        # Write the formatted JSON
-        with open(output_file, 'w') as f:
-            json.dump(data, f, indent=2, sort_keys=False)
-            
-        print(f"JSON file formatted successfully: {output_file}")
-        return True
-    except Exception as e:
-        print(f"Error formatting JSON file: {e}")
-        return False
 
 # Example usage
 if __name__ == "__main__":
