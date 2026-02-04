@@ -701,5 +701,57 @@
       "Garnish with a lemon twist."
     ],
     "description": "A Prohibition-era classic refined by Harry MacElhone at Harry's New York Bar in Paris. The White Lady is essentially a gin sour elevated by Cointreau, with optional egg white for a silky texture."
+  },
+  "bijou": {
+    "name": "Bijou",
+    "ingredients": [
+      "1 oz Gin",
+      "1 oz Sweet vermouth",
+      "1 oz Green Chartreuse",
+      "1 dash Orange bitters",
+      "Lemon twist for garnish"
+    ],
+    "instructions": [
+      "Add all ingredients to a mixing glass with ice.",
+      "Stir until well-chilled, about 30 seconds.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a lemon twist."
+    ],
+    "description": "A 19th-century classic meaning 'jewel' in French - the ingredients represent a diamond (gin), ruby (vermouth), and emerald (Chartreuse). Rich, herbal, and complex, it's a showcase for Green Chartreuse's botanical intensity."
+  },
+  "tipperary": {
+    "name": "Tipperary",
+    "ingredients": [
+      "1.5 oz Irish whiskey",
+      "1 oz Sweet vermouth",
+      "1/2 oz Green Chartreuse",
+      "2 dashes Angostura bitters",
+      "Orange twist for garnish"
+    ],
+    "instructions": [
+      "Add all ingredients to a mixing glass with ice.",
+      "Stir until well-chilled, about 30 seconds.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with an orange twist."
+    ],
+    "description": "Named after the Irish county and the WWI marching song, this pre-Prohibition classic pairs Irish whiskey's smooth maltiness with sweet vermouth and a herbal Chartreuse accent. A sophisticated sipper."
+  },
+  "champs-elysees": {
+    "name": "Champs-Élysées",
+    "ingredients": [
+      "1.5 oz Cognac",
+      "1/2 oz Green Chartreuse",
+      "3/4 oz Fresh lemon juice",
+      "1/2 oz Simple syrup",
+      "1 dash Angostura bitters",
+      "Lemon twist for garnish"
+    ],
+    "instructions": [
+      "Add all ingredients to a shaker with ice.",
+      "Shake until well-chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a lemon twist."
+    ],
+    "description": "A 1920s Parisian classic that's essentially a Sidecar with Green Chartreuse replacing the orange liqueur. The herbal complexity of Chartreuse elevates cognac's warmth with bright citrus balance."
   }
 }
