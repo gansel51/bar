@@ -32,6 +32,15 @@
         </div>
       </div>
       
+      <div class="inventory-controls">
+        <label class="inventory-toggle">
+          <input type="checkbox" id="inventory-mode-toggle">
+          <span class="toggle-slider"></span>
+          <span class="toggle-label">Inventory Mode</span>
+        </label>
+        <span class="inventory-mode-indicator">(click items to toggle availability)</span>
+      </div>
+
       <div class="filter-controls">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="whiskey">Whiskey</button>
@@ -39,6 +48,9 @@
         <button class="filter-btn" data-filter="rum">Rum</button>
         <button class="filter-btn" data-filter="tequila-mezcal">Agave</button>
         <button class="filter-btn" data-filter="other">Other</button>
+        <button class="filter-btn availability-filter" data-filter="unavailable" id="show-unavailable-btn">
+          <i class="fas fa-eye-slash"></i> Hide Unavailable
+        </button>
       </div>
 
       <section class="spirits-category">
@@ -245,53 +257,148 @@
       }
     });
 
-    // Filter functionality
+    // Filter and Inventory functionality
     document.addEventListener('DOMContentLoaded', function() {
-      const filterButtons = document.querySelectorAll('.filter-btn');
+      const filterButtons = document.querySelectorAll('.filter-btn:not(.availability-filter)');
       const beverages = document.querySelectorAll('.beverage-item');
       const searchInput = document.getElementById('spirit-search');
-      
+      const inventoryModeToggle = document.getElementById('inventory-mode-toggle');
+      const showUnavailableBtn = document.getElementById('show-unavailable-btn');
+
+      // localStorage key for inventory
+      const INVENTORY_KEY = 'tipsy-griffin-inventory';
+
+      // Load inventory from localStorage
+      function loadInventory() {
+        const stored = localStorage.getItem(INVENTORY_KEY);
+        return stored ? JSON.parse(stored) : {};
+      }
+
+      // Save inventory to localStorage
+      function saveInventory(inventory) {
+        localStorage.setItem(INVENTORY_KEY, JSON.stringify(inventory));
+      }
+
+      // Generate a unique ID for each spirit item
+      function getSpiritId(li) {
+        const name = li.childNodes[0].textContent.trim();
+        return name.toLowerCase().replace(/[^a-z0-9]/g, '-');
+      }
+
+      // Apply availability classes based on stored inventory
+      function applyInventoryState() {
+        const inventory = loadInventory();
+        const allItems = document.querySelectorAll('.beverage-item ul li');
+
+        allItems.forEach(li => {
+          const id = getSpiritId(li);
+          if (inventory[id] === false) {
+            li.classList.add('unavailable');
+          } else {
+            li.classList.remove('unavailable');
+          }
+        });
+      }
+
+      // Toggle item availability
+      function toggleItemAvailability(li) {
+        const inventory = loadInventory();
+        const id = getSpiritId(li);
+
+        // Toggle: if currently unavailable (false), make available (delete or true)
+        // if currently available (undefined or true), make unavailable (false)
+        if (inventory[id] === false) {
+          delete inventory[id]; // Available (default)
+          li.classList.remove('unavailable');
+        } else {
+          inventory[id] = false; // Unavailable
+          li.classList.add('unavailable');
+        }
+
+        saveInventory(inventory);
+      }
+
+      // Initialize inventory state on page load
+      applyInventoryState();
+
+      // Inventory mode toggle
+      inventoryModeToggle.addEventListener('change', function() {
+        if (this.checked) {
+          document.body.classList.add('inventory-mode');
+        } else {
+          document.body.classList.remove('inventory-mode');
+        }
+      });
+
+      // Click handler for spirit items (only in inventory mode)
+      document.querySelectorAll('.beverage-item ul li').forEach(li => {
+        li.addEventListener('click', function(e) {
+          if (document.body.classList.contains('inventory-mode')) {
+            e.preventDefault();
+            toggleItemAvailability(li);
+          }
+        });
+      });
+
+      // Track whether to hide unavailable items
+      let hideUnavailable = false;
+
+      // Show/Hide unavailable toggle
+      showUnavailableBtn.addEventListener('click', function() {
+        hideUnavailable = !hideUnavailable;
+        this.classList.toggle('active', hideUnavailable);
+
+        // Update button text
+        const icon = this.querySelector('i');
+        if (hideUnavailable) {
+          icon.className = 'fas fa-eye';
+          this.innerHTML = '<i class="fas fa-eye"></i> Show Unavailable';
+        } else {
+          icon.className = 'fas fa-eye-slash';
+          this.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Unavailable';
+        }
+
+        applyFilters();
+      });
+
+      // Combined filter function
+      function applyFilters() {
+        const activeFilter = document.querySelector('.filter-btn.active:not(.availability-filter)');
+        const filter = activeFilter ? activeFilter.getAttribute('data-filter') : 'all';
+        const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+
+        beverages.forEach(beverage => {
+          const matchesType = filter === 'all' || beverage.getAttribute('data-type').includes(filter);
+          const beverageText = beverage.textContent.toLowerCase();
+          const matchesSearch = !searchTerm || beverageText.includes(searchTerm);
+
+          beverage.style.display = (matchesType && matchesSearch) ? 'block' : 'none';
+        });
+
+        // Handle individual item visibility for unavailable filter
+        if (hideUnavailable) {
+          document.querySelectorAll('.beverage-item ul li.unavailable').forEach(li => {
+            li.style.display = 'none';
+          });
+        } else {
+          document.querySelectorAll('.beverage-item ul li').forEach(li => {
+            li.style.display = '';
+          });
+        }
+      }
+
       // Filter buttons click event
       filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-          // Remove active class from all buttons
           filterButtons.forEach(btn => btn.classList.remove('active'));
-          
-          // Add active class to clicked button
           button.classList.add('active');
-          
-          const filter = button.getAttribute('data-filter');
-          
-          // Show/hide beverages based on filter
-          beverages.forEach(beverage => {
-            if (filter === 'all') {
-              beverage.style.display = 'block';
-            } else {
-              if (beverage.getAttribute('data-type').includes(filter)) {
-                beverage.style.display = 'block';
-              } else {
-                beverage.style.display = 'none';
-              }
-            }
-          });
+          applyFilters();
         });
       });
-      
+
       // Search functionality
       if (searchInput) {
-        searchInput.addEventListener('input', () => {
-        const searchTerm = searchInput.value.toLowerCase();
-        
-        beverages.forEach(beverage => {
-          const beverageText = beverage.textContent.toLowerCase();
-
-          if (beverageText.includes(searchTerm)) {
-            beverage.style.display = 'block';
-          } else {
-            beverage.style.display = 'none';
-          }
-        });
-        });
+        searchInput.addEventListener('input', applyFilters);
       }
     });
   </script>
