@@ -999,3 +999,38 @@ body.inventory-mode .beverage-item ul li:hover {
 body.inventory-mode .inventory-mode-indicator {
   display: inline;
 }
+
+/* Cocktail card unavailable styling */
+div.cocktail.unavailable {
+  opacity: 0.4;
+  position: relative;
+}
+
+div.cocktail.unavailable::after {
+  content: 'UNAVAILABLE';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+div.cocktail.unavailable h2 {
+  text-decoration: line-through;
+}
+
+/* Inventory mode for cocktail cards */
+body.inventory-mode div.cocktail {
+  cursor: pointer;
+}
+
+body.inventory-mode div.cocktail:hover {
+  outline: 2px dashed var(--accent-color);
+  outline-offset: 4px;
+}
