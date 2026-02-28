@@ -778,19 +778,17 @@
     "name": "Foreign Lands",
     "ingredients": [
       "1 oz Lustau East India Sherry",
-      "1/2 oz Aperol",
+      "3/4 oz Campari",
       "3/4 oz Pomegranate juice",
-      "2 dashes Orange/golden bitters",
-      "Club soda"
+      "2 dashes Orange/golden bitters"
     ],
     "instructions": [
-      "Add sherry, Aperol, pomegranate juice, and bitters to a mixing glass with ice.",
+      "Add all ingredients to a mixing glass with ice.",
       "Stir until well-chilled.",
       "Strain into a chilled coupe glass.",
-      "Top with a splash of club soda.",
       "Express an orange peel over the top."
     ],
-    "description": "A sherry-based aperitivo built on Lustau East India. Aperol brings a lighter, orange-forward bitterness than Campari, and a splash of club soda lifts the whole thing. Lower in alcohol than it tastes."
+    "description": "A low-ABV Negroni riff built on sherry instead of gin. Campari's bitterness plays against the nutty richness of Lustau East India, with pomegranate in place of sweet vermouth. Stirred, not shaken — the texture is the point."
   },
   "persephone": {
     "name": "Persephone",
