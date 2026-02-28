@@ -5,7 +5,7 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Seasonal Cocktails - The Tipsy Griffin</title>
+  <title>Pomegranate Tasting - The Tipsy Griffin</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </head>
@@ -17,8 +17,8 @@
       <a href="index.html">Bar Menu</a>
       <a href="beer.html">Beer and Wine</a>
       <a href="classics.html">Classic Cocktails</a>
-      <a href="seasonal.html" class="active">Seasonal Cocktails</a>
-      <a href="pomegranate.html">Pomegranate Tasting</a>
+      <a href="seasonal.html">Seasonal Cocktails</a>
+      <a href="pomegranate.html" class="active">Pomegranate Tasting</a>
       <a href="spirits.html">Spirits List</a>
       <a href="homebrew.html">Homebrewing</a>
     </nav>
@@ -26,183 +26,151 @@
 
   <main>
     <div class="container">
-      <h1>Seasonal Cocktails</h1>
+      <h1>Pomegranate Tasting</h1>
 
       <div class="search-container">
         <div class="search-bar">
           <input type="text" class="search-input" id="cocktail-search" placeholder="Search cocktails...">
-          <button class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+          <button class="search-btn"><i class="fas fa-search"></i></button>
         </div>
       </div>
 
       <div class="filter-controls">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="whiskey">Whiskey</button>
         <button class="filter-btn" data-filter="gin">Gin</button>
-        <button class="filter-btn" data-filter="rum">Rum</button>
+        <button class="filter-btn" data-filter="sherry">Sherry</button>
+        <button class="filter-btn" data-filter="spritz">Spritz</button>
         <button class="filter-btn" data-filter="tequila">Tequila</button>
+        <button class="filter-btn" data-filter="whiskey">Whiskey</button>
       </div>
 
       <section class="cocktail-list">
 
-        <div class="cocktail" data-type="tequila-mezcal">
-          <span class="icon">🍸</span>
-          <h2>Smoked Mezcal Sour</h2>
+        <div class="cocktail" data-type="spritz">
+          <span class="icon">🍾</span>
+          <h2>Persian Garden</h2>
           <div class="cocktail-details">
             <div class="ingredients">
               <h3>Ingredients:</h3>
               <ul class="bullet-list">
-                <li>1 oz Tequila Reposado</li>
-                <li>1/2 oz Mezcal</li>
-                <li>3/4 oz Lemon juice</li>
-                <li>1/4 oz Pineapple juice</li>
-                <li>1/2 oz Honey syrup</li>
-                <li>Habanero shrub</li>
-                <li>Egg white</li>
-                <li>Orange bitters</li>
+                <li>1/2 oz Campari</li>
+                <li>1 oz St. Germain</li>
+                <li>1 oz Pomegranate juice</li>
+                <li>1/4 oz Grenadine</li>
+                <li>3 oz Prosecco</li>
+                <li>1-2 oz Soda water</li>
+                <li>Lemon twist</li>
               </ul>
             </div>
             <div class="description">
-              <p>This smoky cocktail is a twist on the classic whiskey sour, combining the flavors of mezcal and tequila
-                with a
-                hint of spice from habanero shrub and froth from the egg to refresh in the spring heat.</p>
+              <p>A more complex take on the elderflower spritz — Campari adds bitterness and depth, grenadine deepens
+                the sweetness, and fresh pomegranate keeps it bright. Built over ice in a wine glass.</p>
             </div>
           </div>
           <br>
           <div class="cocktail-footer">
-            <button class="btn btn-small view-recipe" data-cocktail="mezcal-sour">Full Recipe</button>
+            <button class="btn btn-small view-recipe" data-cocktail="persian-garden">Full Recipe</button>
           </div>
         </div>
 
-        <div class="cocktail" data-type="tequila-mezcal">
+        <div class="cocktail" data-type="sherry">
           <span class="icon">🍸</span>
-          <h2>Orange Margarita</h2>
+          <h2>Foreign Lands</h2>
           <div class="cocktail-details">
             <div class="ingredients">
               <h3>Ingredients:</h3>
               <ul class="bullet-list">
-                <li>1.5 oz Tequila</li>
-                <li>3/4 oz Cointreau</li>
-                <li>3/4 oz Orange juice</li>
-                <li>1/2 oz Lemon juice</li>
-                <li>Lime juice</li>
-                <li>1/2 oz Agave syrup</li>
-                <li>Habanero shrub</li>
-                <li>Angostura bitters</li>
-                <li>Tajín-rimmed glass</li>
+                <li>1 oz Lustau East India Sherry</li>
+                <li>3/4 oz Campari</li>
+                <li>3/4 oz Pomegranate juice</li>
+                <li>2 dashes Orange/golden bitters</li>
               </ul>
             </div>
             <div class="description">
-              <p>This refreshing margarita is a perfect summer drink, combining the flavors of tequila and orange with a
-                hint of
-                spice from Tajín and habanero shrub.</p>
+              <p>A low-ABV Negroni riff built on sherry instead of gin. Campari's bitterness plays against the nutty
+                richness of Lustau East India, with pomegranate in place of sweet vermouth. Stirred, not shaken.</p>
             </div>
           </div>
           <br>
           <div class="cocktail-footer">
-            <button class="btn btn-small view-recipe" data-cocktail="orange-margarita">Full Recipe</button>
-          </div>
-        </div>
-
-        <div class="cocktail" data-type="gin">
-          <span class="icon">🍸</span>
-          <h2>Blackberry Bramble</h2>
-          <div class="cocktail-details">
-            <div class="ingredients">
-              <h3>Ingredients:</h3>
-              <ul class="bullet-list">
-                <li>2 oz Gin</li>
-                <li>3/4 oz Lemon juice</li>
-                <li>1/2 oz Honey syrup</li>
-                <li>1/4 oz Chambord</li>
-                <li>Blackberry shrub</li>
-                <li>Golden bitters</li>
-              </ul>
-            </div>
-            <div class="description">
-              <p>This herbal cocktail combines the flavors of gin and blackberries with a hint of sweetness from honey
-                syrup and
-                Chambord.</p>
-            </div>
-          </div>
-          <br>
-          <div class="cocktail-footer">
-            <button class="btn btn-small view-recipe" data-cocktail="blackberry-bramble">Full Recipe</button>
-          </div>
-        </div>
-
-        <div class="cocktail" data-type="gin">
-          <span class="icon">🍸</span>
-          <h2>Ginger Gin Fizz</h2>
-          <div class="cocktail-details">
-            <div class="ingredients">
-              <h3>Ingredients:</h3>
-              <ul class="bullet-list">
-                <li>2 oz Gin</li>
-                <li>1/2 oz Lime juice</li>
-                <li>Ginger soda</li>
-                <li>Angostura bitters</li>
-              </ul>
-            </div>
-            <div class="description">
-              <p>This fizzy refresher mixes gin and ginger for a light, sweet, bubbly drink.</p>
-            </div>
-          </div>
-          <br>
-          <div class="cocktail-footer">
-            <button class="btn btn-small view-recipe" data-cocktail="ginger-gin-fizz">Full Recipe</button>
+            <button class="btn btn-small view-recipe" data-cocktail="foreign-lands">Full Recipe</button>
           </div>
         </div>
 
         <div class="cocktail" data-type="whiskey">
           <span class="icon">🥃</span>
-          <h2>Blackberry Sour</h2>
+          <h2>The Grenadier</h2>
           <div class="cocktail-details">
             <div class="ingredients">
               <h3>Ingredients:</h3>
               <ul class="bullet-list">
-                <li>1.5 oz Bourbon</li>
-                <li>3/4 oz Honey syrup</li>
+                <li>2 oz Rye whiskey</li>
                 <li>3/4 oz Lemon juice</li>
-                <li>1/4 oz Chambord (float)</li>
+                <li>3/4 oz Grenadine</li>
                 <li>Egg white</li>
-                <li>Blackberry shrub</li>
                 <li>Angostura bitters</li>
+                <li>Maraschino cherry</li>
               </ul>
             </div>
             <div class="description">
-              <p>This blackberry whiskey sour takes the classic cocktail to the next level with the addition of muddled
-                blackberries and a float of Chambord.</p>
+              <p>A whiskey sour that swaps simple syrup for grenadine — the name comes from the French word for
+                pomegranate, <em>grenade</em>. Rye's spice cuts through the sweetness for more backbone.</p>
             </div>
           </div>
           <br>
           <div class="cocktail-footer">
-            <button class="btn btn-small view-recipe" data-cocktail="blackberry-whiskey-sour">Full Recipe</button>
+            <button class="btn btn-small view-recipe" data-cocktail="grenadier">Full Recipe</button>
           </div>
         </div>
 
-        <div class="cocktail" data-type="rum">
-          <span class="icon">🍹</span>
-          <h2>Honeysuckle</h2>
+        <div class="cocktail" data-type="gin">
+          <span class="icon">🍸</span>
+          <h2>Silk Road</h2>
           <div class="cocktail-details">
             <div class="ingredients">
               <h3>Ingredients:</h3>
               <ul class="bullet-list">
-                <li>2 oz White rum</li>
-                <li>3/4 oz Honey syrup</li>
-                <li>3/4 oz Lime juice</li>
-                <li>Lime wedge</li>
+                <li>2 oz Gin</li>
+                <li>3/4 oz Lemon juice</li>
+                <li>1/2 oz Honey syrup</li>
+                <li>Pomegranate juice (drizzle)</li>
+                <li>Grenadine (float)</li>
+                <li>Golden bitters</li>
               </ul>
             </div>
             <div class="description">
-              <p>This summer cocktail combines the flavors of white rum and honey syrup with a hint of lime for a light,
-                sweet
-                drink.</p>
+              <p>A pomegranate riff on the classic Bramble. Gin and honey syrup provide a floral, herbal base, while
+                the drizzled pomegranate seeps through the crushed ice as you drink — jewel-toned and layered.</p>
             </div>
           </div>
           <br>
           <div class="cocktail-footer">
-            <button class="btn btn-small view-recipe" data-cocktail="honeysuckle">Full Recipe</button>
+            <button class="btn btn-small view-recipe" data-cocktail="silk-road-bramble">Full Recipe</button>
+          </div>
+        </div>
+
+        <div class="cocktail" data-type="tequila">
+          <span class="icon">🍸</span>
+          <h2>Persephone</h2>
+          <div class="cocktail-details">
+            <div class="ingredients">
+              <h3>Ingredients:</h3>
+              <ul class="bullet-list">
+                <li>1.5 oz Blanco tequila</li>
+                <li>3/4 oz St. Germain</li>
+                <li>1/2 oz Pomegranate juice</li>
+                <li>1/2 oz Lime juice</li>
+                <li>Dash orange bitters</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>Named for the goddess who traded the eternal spring for six pomegranate seeds. Tequila's vegetal
+                brightness meets elderflower sweetness and the tart pull of pomegranate — two worlds in one glass.</p>
+            </div>
+          </div>
+          <br>
+          <div class="cocktail-footer">
+            <button class="btn btn-small view-recipe" data-cocktail="persephone">Full Recipe</button>
           </div>
         </div>
 
@@ -251,15 +219,11 @@
       // Filter buttons click event
       filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-          // Remove active class from all buttons
           filterButtons.forEach(btn => btn.classList.remove('active'));
-
-          // Add active class to clicked button
           button.classList.add('active');
 
           const filter = button.getAttribute('data-filter');
 
-          // Show/hide cocktails based on filter
           cocktails.forEach(cocktail => {
             if (filter === 'all') {
               cocktail.style.display = 'block';
@@ -302,7 +266,6 @@
         })
         .catch(error => {
           console.error('Error loading recipes:', error);
-          // Fallback in case the JSON file fails to load
           recipes = {
             'recipe-not-found': {
               name: 'Recipe Not Found',
@@ -318,7 +281,6 @@
         button.addEventListener('click', () => {
           const recipeId = button.getAttribute('data-cocktail');
 
-          // Show loading indicator first
           modalContent.innerHTML = `
             <div class="loading">
               <div class="loading-spinner"></div>
@@ -326,10 +288,8 @@
             </div>
           `;
 
-          // Show modal right away with loading spinner
           modal.classList.add('active');
 
-          // Wait a moment to ensure JSON is loaded
           setTimeout(() => {
             const recipe = recipes[recipeId] || {
               name: 'Recipe Coming Soon',
@@ -338,7 +298,6 @@
               description: 'We\'re still fine-tuning this delicious cocktail. Check back soon!'
             };
 
-            // Populate modal content
             modalContent.innerHTML = `
   <h2>${recipe.name}</h2>
   <div class="recipe-content">

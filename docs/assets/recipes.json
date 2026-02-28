@@ -286,7 +286,7 @@
     "name": "Grasshopper",
     "ingredients": [
       "1.5 oz Heavy cream",
-      "1 oz Cr\u00e8me de menthe",
+      "1 oz Crème de menthe",
       "1 oz Giffard Cacao",
       "1/4 oz Branca Menta",
       "Chocolate shavings for garnish"
@@ -346,16 +346,16 @@
       "1/2 oz Agave syrup",
       "Habanero shrub",
       "Angostura bitters",
-      "Taj\u00edn-rimmed glass"
+      "Tajín-rimmed glass"
     ],
     "instructions": [
-      "Rim a rocks glass with Taj\u00edn and set aside.",
+      "Rim a rocks glass with Tajín and set aside.",
       "Add all ingredients to a shaker with ice.",
       "Shake until well-chilled.",
       "Strain into the prepared glass over fresh ice.",
       "Garnish with an orange wheel and lime wedge."
     ],
-    "description": "This refreshing margarita is a perfect summer drink, combining the flavors of tequila and orange with a hint of spice from Taj\u00edn and habanero shrub."
+    "description": "This refreshing margarita is a perfect summer drink, combining the flavors of tequila and orange with a hint of spice from Tajín and habanero shrub."
   },
   "blackberry-bramble": {
     "name": "Blackberry Bramble",
@@ -753,5 +753,97 @@
       "Garnish with a lemon twist."
     ],
     "description": "A 1920s Parisian classic that's essentially a Sidecar with Green Chartreuse replacing the orange liqueur. The herbal complexity of Chartreuse elevates cognac's warmth with bright citrus balance."
+  },
+  "persian-garden": {
+    "name": "Persian Garden",
+    "ingredients": [
+      "1/2 oz Campari",
+      "1 oz St. Germain",
+      "1 oz Pomegranate juice",
+      "1/4 oz Grenadine",
+      "3 oz Prosecco",
+      "1-2 oz Soda water",
+      "Lemon twist"
+    ],
+    "instructions": [
+      "Fill a wine glass with ice.",
+      "Add Campari, St. Germain, pomegranate juice, and grenadine.",
+      "Top with prosecco and soda water.",
+      "Stir gently to combine.",
+      "Garnish with a lemon twist."
+    ],
+    "description": "A more complex take on the elderflower spritz — Campari adds bitterness and depth, grenadine deepens the sweetness, and fresh pomegranate juice keeps it bright. Built over ice in a wine glass."
+  },
+  "foreign-lands": {
+    "name": "Foreign Lands",
+    "ingredients": [
+      "1 oz Lustau East India Sherry",
+      "3/4 oz Campari",
+      "3/4 oz Pomegranate juice",
+      "2 dashes Orange/golden bitters"
+    ],
+    "instructions": [
+      "Add all ingredients to a mixing glass with ice.",
+      "Stir until well-chilled.",
+      "Strain into a chilled coupe glass.",
+      "Express an orange peel over the top."
+    ],
+    "description": "A low-ABV Negroni riff built on sherry instead of gin. Campari's bitterness plays against the nutty richness of Lustau East India, with pomegranate in place of sweet vermouth. Stirred, not shaken — the texture is the point."
+  },
+  "grenadier": {
+    "name": "The Grenadier",
+    "ingredients": [
+      "2 oz Rye whiskey",
+      "3/4 oz Lemon juice",
+      "3/4 oz Grenadine",
+      "Egg white",
+      "Angostura bitters",
+      "Maraschino cherry"
+    ],
+    "instructions": [
+      "Add rye, lemon juice, grenadine, and egg white to a shaker without ice and dry shake for 15 seconds.",
+      "Add ice and shake again until well-chilled.",
+      "Strain into a rocks glass over fresh ice.",
+      "Add a few dashes of Angostura bitters on the foam.",
+      "Garnish with a maraschino cherry."
+    ],
+    "description": "A whiskey sour that swaps simple syrup for grenadine — the name comes from the French word for pomegranate, grenade. Rye's spice cuts through the sweetness, giving it more backbone than the bourbon version."
+  },
+  "silk-road-bramble": {
+    "name": "Silk Road",
+    "ingredients": [
+      "2 oz Gin",
+      "3/4 oz Lemon juice",
+      "1/2 oz Honey syrup",
+      "Pomegranate juice (drizzle)",
+      "Grenadine (float)",
+      "Golden bitters"
+    ],
+    "instructions": [
+      "Add gin, lemon juice, and honey syrup to a shaker with ice.",
+      "Shake until well-chilled.",
+      "Strain into a rocks glass filled with crushed ice.",
+      "Drizzle pomegranate juice and a float of grenadine over the top.",
+      "Add a few dashes of golden bitters.",
+      "Garnish with a lemon wheel."
+    ],
+    "description": "A pomegranate riff on the classic Bramble. Gin and honey syrup provide a floral, herbal base, while the drizzled pomegranate seeps through the crushed ice as you drink — jewel-toned and layered."
+  },
+  "persephone": {
+    "name": "Persephone",
+    "ingredients": [
+      "1.5 oz Blanco tequila",
+      "3/4 oz St. Germain",
+      "1/2 oz Pomegranate juice",
+      "1/2 oz Lime juice",
+      "Dash orange bitters"
+    ],
+    "instructions": [
+      "Add all ingredients to a shaker with ice.",
+      "Shake until well-chilled.",
+      "Double strain into a chilled coupe glass.",
+      "Express a lime peel over the top."
+    ],
+    "description": "Named for the goddess who traded the eternal spring for six pomegranate seeds. Tequila's vegetal brightness meets the floral sweetness of elderflower and the tart pull of pomegranate — two worlds in one glass."
   }
 }
