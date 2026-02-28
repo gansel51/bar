@@ -778,56 +778,19 @@
     "name": "Foreign Lands",
     "ingredients": [
       "1 oz Lustau East India Sherry",
-      "3/4 oz Campari",
+      "1/2 oz Aperol",
       "3/4 oz Pomegranate juice",
-      "2 dashes Orange/golden bitters"
+      "2 dashes Orange/golden bitters",
+      "Club soda"
     ],
     "instructions": [
-      "Add all ingredients to a mixing glass with ice.",
+      "Add sherry, Aperol, pomegranate juice, and bitters to a mixing glass with ice.",
       "Stir until well-chilled.",
       "Strain into a chilled coupe glass.",
+      "Top with a splash of club soda.",
       "Express an orange peel over the top."
     ],
-    "description": "A low-ABV Negroni riff built on sherry instead of gin. Campari's bitterness plays against the nutty richness of Lustau East India, with pomegranate in place of sweet vermouth. Stirred, not shaken — the texture is the point."
-  },
-  "grenadier": {
-    "name": "The Grenadier",
-    "ingredients": [
-      "2 oz Rye whiskey",
-      "3/4 oz Lemon juice",
-      "3/4 oz Grenadine",
-      "Egg white",
-      "Angostura bitters",
-      "Maraschino cherry"
-    ],
-    "instructions": [
-      "Add rye, lemon juice, grenadine, and egg white to a shaker without ice and dry shake for 15 seconds.",
-      "Add ice and shake again until well-chilled.",
-      "Strain into a rocks glass over fresh ice.",
-      "Add a few dashes of Angostura bitters on the foam.",
-      "Garnish with a maraschino cherry."
-    ],
-    "description": "A whiskey sour that swaps simple syrup for grenadine — the name comes from the French word for pomegranate, grenade. Rye's spice cuts through the sweetness, giving it more backbone than the bourbon version."
-  },
-  "silk-road-bramble": {
-    "name": "Silk Road",
-    "ingredients": [
-      "2 oz Gin",
-      "3/4 oz Lemon juice",
-      "1/2 oz Honey syrup",
-      "Pomegranate juice (drizzle)",
-      "Grenadine (float)",
-      "Golden bitters"
-    ],
-    "instructions": [
-      "Add gin, lemon juice, and honey syrup to a shaker with ice.",
-      "Shake until well-chilled.",
-      "Strain into a rocks glass filled with crushed ice.",
-      "Drizzle pomegranate juice and a float of grenadine over the top.",
-      "Add a few dashes of golden bitters.",
-      "Garnish with a lemon wheel."
-    ],
-    "description": "A pomegranate riff on the classic Bramble. Gin and honey syrup provide a floral, herbal base, while the drizzled pomegranate seeps through the crushed ice as you drink — jewel-toned and layered."
+    "description": "A sherry-based aperitivo built on Lustau East India. Aperol brings a lighter, orange-forward bitterness than Campari, and a splash of club soda lifts the whole thing. Lower in alcohol than it tastes."
   },
   "persephone": {
     "name": "Persephone",
@@ -845,5 +808,22 @@
       "Express a lime peel over the top."
     ],
     "description": "Named for the goddess who traded the eternal spring for six pomegranate seeds. Tequila's vegetal brightness meets the floral sweetness of elderflower and the tart pull of pomegranate — two worlds in one glass."
+  },
+  "japanese-highball": {
+    "name": "Red Thread of Fate",
+    "ingredients": [
+      "2 oz Japanese whisky",
+      "1/2 oz Pomegranate juice",
+      "1/4 oz Lemon juice",
+      "Soda water",
+      "Lemon twist"
+    ],
+    "instructions": [
+      "Fill a highball glass with ice.",
+      "Add Japanese whisky, pomegranate juice, and lemon juice.",
+      "Top with soda water and stir gently.",
+      "Garnish with a lemon twist."
+    ],
+    "description": "A riff on the Japanese highball — clean, effervescent, and built to let the whisky speak. A measure of pomegranate juice and a squeeze of lemon add color and a quiet tartness without overcomplicating things."
   }
 }
